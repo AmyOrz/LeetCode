@@ -80,14 +80,17 @@ class Tree{
             return i>j?i+1:j+1;
         }
     }
-    public treeArr:any = [];
-    public InverTree(tree:TreeNode):any{
+
+    public InverTree(tree:TreeNode):TreeNode{
         if(tree != void 0){
-            this.treeArr.push(tree.val);
-            this.InverTree(tree.right);
+            let nodeTemp:TreeNode = tree.left;
+            tree.left = tree.right;
+            tree.right = nodeTemp;
+
             this.InverTree(tree.left);
+            this.InverTree(tree.right);
         }
-        return this.treeArr;
+        return tree;
     }
 }
 var tree = new Tree();
