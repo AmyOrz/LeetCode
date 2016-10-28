@@ -72,6 +72,9 @@ class LinkList{
             }
         }
     }
+    reverse():Link{
+        
+    }
     private _isExistPosition(position:number){
         if(position < 0 || position >this.listArr.length)
             return -1;

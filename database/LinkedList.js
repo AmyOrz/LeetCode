@@ -74,6 +74,8 @@ var LinkList = (function () {
             }
         }
     };
+    LinkList.prototype.reverse = function () {
+    };
     LinkList.prototype._isExistPosition = function (position) {
         if (position < 0 || position > this.listArr.length)
             return -1;
