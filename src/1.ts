@@ -14,5 +14,5 @@ let leetCode:paramOfNumber = (arr,target)=>{
     console.log(result)
     return result;
 };
-let array:number[] = [0,4,3,0]
+let array:number[] = [0,4,3,0];
 leetCode(array,0);

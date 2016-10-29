@@ -92,6 +92,9 @@ class Tree{
         }
         return tree;
     }
+    public maximun(){
+
+    }
 }
 var tree = new Tree();
 tree.insert(23);
