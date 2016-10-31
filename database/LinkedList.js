@@ -74,7 +74,15 @@ var LinkList = (function () {
             }
         }
     };
-    LinkList.prototype.reverse = function () {
+    LinkList.prototype.reverse = function (head) {
+        var node = head, pre = null, temp = null;
+        while (node != void 0) {
+            temp = node.next;
+            node.next = pre;
+            pre = node;
+            node = temp;
+        }
+        return pre;
     };
     LinkList.prototype._isExistPosition = function (position) {
         if (position < 0 || position > this.listArr.length)
@@ -89,7 +97,5 @@ link.append(12);
 link.append(13);
 link.append(10);
 link.append(7);
-link.insertAfter(3, 123);
-link.removeAt(3);
-console.log(link.getArrayData());
+console.log(link.reverse(link.getHead()));
 //# sourceMappingURL=LinkedList.js.map

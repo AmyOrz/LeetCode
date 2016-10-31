@@ -7,6 +7,7 @@ class LinkNode implements Link{
 }
 class LinkList{
     private head:Link;
+    public reverseLink:Link;
     private listArr:number[] = [];
     getHead():Link{
         return this.head;
@@ -72,10 +73,20 @@ class LinkList{
             }
         }
     }
-    reverse():Link{
-        
+    reverse(head:Link):Link{
+        let node:Link = head,
+            pre:Link = null,
+            temp:Link = null;
+
+        while(node != void 0){
+            temp = node.next;
+            node.next = pre;
+            pre = node;
+            node = temp;
+        }
+        return pre;
     }
-    private _isExistPosition(position:number){
+    private _isExistPosition(position:number):number{
         if(position < 0 || position >this.listArr.length)
             return -1;
     }
@@ -87,9 +98,4 @@ link.append(12);
 link.append(13);
 link.append(10);
 link.append(7);
-link.insertAfter(3,123);
-link.removeAt(3);
-
-console.log(link.getArrayData());
-
-
+console.log(link.reverse(link.getHead()));
