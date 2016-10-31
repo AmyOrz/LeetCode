@@ -100,4 +100,5 @@ tree.insert(3);
 tree.insert(99);
 tree.insert(22);
 console.log(tree.InverTree(tree.getRoot()));
+console.log(tree.depthData(tree.getRoot()));
 //# sourceMappingURL=tree.js.map
