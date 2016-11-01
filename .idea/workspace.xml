@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/fck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/326.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/LinkedList.js" afterPath="$PROJECT_DIR$/database/LinkedList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/LinkedList.js.map" afterPath="$PROJECT_DIR$/database/LinkedList.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/LinkedList.ts" afterPath="$PROJECT_DIR$/database/LinkedList.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.js.map" afterPath="$PROJECT_DIR$/database/tree.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.ts" afterPath="$PROJECT_DIR$/database/tree.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode.html" afterPath="$PROJECT_DIR$/leetcode.html" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,28 +53,64 @@
       <file leaf-file-name="tree.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/tree.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
+            <state relative-caret-position="2600">
               <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/LinkedList.js">
+      <file leaf-file-name="LinkedList.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/LinkedList.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="79" column="29" selection-start-line="77" selection-start-column="8" selection-end-line="84" selection-end-column="19" />
+            <state relative-caret-position="447">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/LinkedList.ts">
+      <file leaf-file-name="LinkedList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/LinkedList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+            <state relative-caret-position="1072">
+              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+              <folding>
+                <marker date="1478003390170" expanded="true" signature="182:2874" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="261:294" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="350:619" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="464:552" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="668:978" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="747:788" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="802:972" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="874:929" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1023:1079" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1141:1706" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1337:1413" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1427:1700" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1462:1690" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1543:1676" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1760:2221" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1912:1961" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="1975:2215" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2010:2205" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2051:2151" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2272:2500" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2355:2474" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2559:2874" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2645:2848" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2700:2765" ph="{...}" />
+                <marker date="1478003390170" expanded="true" signature="2783:2838" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fck.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/fck.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -89,6 +124,7 @@
         <option value="HTML File" />
         <option value="tsconfig.json" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -115,7 +151,10 @@
         <option value="$PROJECT_DIR$/src/1.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/tree.ts" />
+        <option value="$PROJECT_DIR$/src/326.ts" />
+        <option value="$PROJECT_DIR$/database/fck.js" />
         <option value="$PROJECT_DIR$/leetcode.html" />
+        <option value="$PROJECT_DIR$/database/LinkedList.js" />
         <option value="$PROJECT_DIR$/database/LinkedList.ts" />
       </list>
     </option>
@@ -184,58 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinkedList.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
@@ -277,6 +264,72 @@
             <PATH_ELEMENT USER_OBJECT="database">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinkedList.ts" />
+              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -406,12 +459,14 @@
       <workItem from="1477750303891" duration="270000" />
       <workItem from="1477877703151" duration="662000" />
       <workItem from="1477878605013" duration="233000" />
-      <workItem from="1477878848067" duration="10285000" />
+      <workItem from="1477878848067" duration="11211000" />
+      <workItem from="1477902090354" duration="1213000" />
+      <workItem from="1477994886305" duration="6389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41808000" />
+    <option name="totallyTimeSpent" value="50336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1056" extended-state="1" />
@@ -452,8 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/numericalSlurmPartitionsForm.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/taglib.jsp" />
     <entry file="file://$PROJECT_DIR$/leetcode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -721,6 +774,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/217.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/tree.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/326.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/fck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -733,34 +817,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/217.ts">
+    <entry file="file://$PROJECT_DIR$/database/LinkedList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1072">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+          <folding>
+            <marker date="1478003390170" expanded="true" signature="182:2874" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="261:294" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="350:619" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="464:552" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="668:978" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="747:788" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="802:972" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="874:929" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1023:1079" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1141:1706" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1337:1413" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1427:1700" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1462:1690" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1543:1676" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1760:2221" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1912:1961" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="1975:2215" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2010:2205" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2051:2151" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2272:2500" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2355:2474" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2559:2874" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2645:2848" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2700:2765" ph="{...}" />
+            <marker date="1478003390170" expanded="true" signature="2783:2838" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/LinkedList.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/tree.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/LinkedList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="79" column="29" selection-start-line="77" selection-start-column="8" selection-end-line="84" selection-end-column="19" />
+        <state relative-caret-position="447">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
         </state>
       </provider>

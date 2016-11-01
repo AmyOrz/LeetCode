@@ -7,19 +7,19 @@ var LinkNode = (function () {
 }());
 var LinkList = (function () {
     function LinkList() {
-        this.listArr = [];
     }
     LinkList.prototype.getHead = function () {
         return this.head;
     };
-    LinkList.prototype.getArrayData = function () {
-        var current = this.head;
+    LinkList.prototype.getArrayData = function (link) {
+        var current = link == void 0 ? this.head : link;
+        var listArr = [];
         while (current.next) {
-            this.listArr.push(current.value);
+            listArr.push(current.value);
             current = current.next;
         }
-        this.listArr.push(current.value);
-        return this.listArr;
+        listArr.push(current.value);
+        return listArr;
     };
     LinkList.prototype.append = function (val) {
         var node = new LinkNode(val, null);
@@ -38,7 +38,7 @@ var LinkList = (function () {
         this.head = { value: null, next: null };
     };
     LinkList.prototype.insertAfter = function (target, val) {
-        this._isExistPosition(target);
+        this._isExistPosition(target, this.getArrayData(this.head));
         var node = new LinkNode(val, null);
         var index = 0;
         var current = this.head;
@@ -58,7 +58,7 @@ var LinkList = (function () {
         }
     };
     LinkList.prototype.removeAt = function (target) {
-        this._isExistPosition(target);
+        this._isExistPosition(target, this.getArrayData(this.head));
         var index = 0;
         var current = this.head;
         if (target == 0) {
@@ -84,18 +84,26 @@ var LinkList = (function () {
         }
         return pre;
     };
-    LinkList.prototype._isExistPosition = function (position) {
-        if (position < 0 || position > this.listArr.length)
+    LinkList.prototype.removeDuplicate = function (head) {
+        var current = head;
+        while (current != null && current.next != null) {
+            if (current.value == current.next.value) {
+                current.next = current.next.next;
+            }
+            else {
+                current = current.next;
+            }
+        }
+        return head;
+    };
+    LinkList.prototype._isExistPosition = function (position, arrLen) {
+        if (position < 0 || position > arrLen.length)
             return -1;
     };
     return LinkList;
 }());
 var link = new LinkList();
 link.append(1);
-link.append(11);
-link.append(12);
-link.append(13);
-link.append(10);
-link.append(7);
-console.log(link.reverse(link.getHead()));
+link.append(1);
+console.log(link.removeDuplicate(link.getHead()));
 //# sourceMappingURL=LinkedList.js.map
