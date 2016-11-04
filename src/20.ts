@@ -1,7 +1,6 @@
 var isValid = (s:string):boolean=>{
     if(s.length%2 != 0)return false;
     let enterSymbol:string[] = ["(",")","{","}","[","]"];
-    let interval = s.length/2;
     let result:string[] = [];
     for(let i = 0,len = s.length;i<len;i++){
         if(enterSymbol.indexOf(s[i])%2 == 0){
