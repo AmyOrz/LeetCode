@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/numericalSlurmPartitionsForm.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/taglib.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.ts" afterPath="$PROJECT_DIR$/database/tree.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/1.ts" afterPath="$PROJECT_DIR$/src/1.ts" />
-    </list>
+    <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="" />
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -337,12 +331,12 @@
       <workItem from="1477561964565" duration="6385000" />
       <workItem from="1477633038336" duration="2072000" />
       <workItem from="1477654885602" duration="2259000" />
-      <workItem from="1477750303891" duration="270000" />
+      <workItem from="1477750303891" duration="869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30628000" />
+    <option name="totallyTimeSpent" value="31227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
