@@ -64,6 +64,7 @@ var Tree = (function () {
         }
     };
     Tree.prototype.depthData = function (tree) {
+        if(tree.next == void 0)return 0;
         var i = 0, j = 0;
         if (tree != void 0) {
             if (tree.left) {

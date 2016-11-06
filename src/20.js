@@ -2,7 +2,6 @@ var isValid = function (s) {
     if (s.length % 2 != 0)
         return false;
     var enterSymbol = ["(", ")", "{", "}", "[", "]"];
-    var interval = s.length / 2;
     var result = [];
     for (var i = 0, len = s.length; i < len; i++) {
         if (enterSymbol.indexOf(s[i]) % 2 == 0) {
