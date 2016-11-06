@@ -7,18 +7,18 @@ class LinkNode implements Link{
 }
 class LinkList{
     private head:Link;
-    private listArr:number[] = [];
     getHead():Link{
         return this.head;
     }
-    getArrayData():number[]{
-        let current:Link = this.head;
+    getArrayData(link?:Link):number[]{
+        let current:Link = link == void 0?this.head:link;
+        let listArr:number[] = [];
         while(current.next){
-            this.listArr.push(current.value);
+            listArr.push(current.value);
             current = current.next;
         }
-        this.listArr.push(current.value);
-        return this.listArr;
+        listArr.push(current.value);
+        return listArr;
     }
     append(val:number):void{
         let node:LinkNode = new LinkNode(val,null);
@@ -36,7 +36,7 @@ class LinkList{
         this.head = {value:null,next:null};
     }
     insertAfter(target:number,val:number):void{
-        this._isExistPosition(target);
+        this._isExistPosition(target,this.getArrayData(this.head));
 
         let node:LinkNode = new LinkNode(val,null);
         let index:number = 0;
@@ -56,7 +56,7 @@ class LinkList{
         }
     }
     removeAt(target:number):void{
-        this._isExistPosition(target);
+        this._isExistPosition(target,this.getArrayData(this.head));
 
         let index:number = 0;
         let current:Link = this.head;
@@ -72,24 +72,37 @@ class LinkList{
             }
         }
     }
-    reverse():Link{
-        
+    reverse(head:Link):Link{
+        let node:Link = head,
+            pre:Link = null,
+            temp:Link = null;
+
+        while(node != void 0){
+            temp = node.next;
+            node.next = pre;
+            pre = node;
+            node = temp;
+        }
+        return pre;
     }
-    private _isExistPosition(position:number){
-        if(position < 0 || position >this.listArr.length)
+    removeDuplicate(head:Link):Link{
+        let current:Link = head;
+        while(current != null && current.next != null){
+            if(current.value == current.next.value){
+                current.next = current.next.next;
+            }else {
+                current = current.next;
+            }
+        }
+        return head;
+    }
+    private _isExistPosition(position:number,arrLen:number[]):number{
+        if(position < 0 || position >arrLen.length)
             return -1;
     }
 }
 let link:LinkList = new LinkList();
 link.append(1);
-link.append(11);
-link.append(12);
-link.append(13);
-link.append(10);
-link.append(7);
-link.insertAfter(3,123);
-link.removeAt(3);
-
-console.log(link.getArrayData());
-
+link.append(1);
+console.log(link.removeDuplicate(link.getHead()))
 

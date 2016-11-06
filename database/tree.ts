@@ -92,9 +92,6 @@ class Tree{
         }
         return tree;
     }
-    public maximun(){
-
-    }
 }
 var tree = new Tree();
 tree.insert(23);
@@ -105,4 +102,4 @@ tree.insert(3);
 tree.insert(99);
 tree.insert(22);
 console.log(tree.InverTree(tree.getRoot()))
-
+console.log(tree.depthData(tree.getRoot()));
