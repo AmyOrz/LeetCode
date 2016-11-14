@@ -6,8 +6,8 @@ var rob = function (nums) {
     for (var i = 2; i < n; i++) {
         result.push(Math.max(result[i - 2] + nums[i], result[i - 1]));
     }
-    console.log(result);
+    console.log(result[n - 1]);
     return result[n - 1];
 };
-rob([1, 21, 4, 34, 56, 78, 2]);
+rob([1, 21, 436, 4567, 568, 78978, 2]);
 //# sourceMappingURL=198.js.map
