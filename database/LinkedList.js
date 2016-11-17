@@ -105,7 +105,6 @@ var LinkList = (function () {
             //the second cycle enter if
             if (hash[head.value]) {
                 for (var i = 0; i < hash[head.value].length; i++) {
-                    //   console.log(head)
                     console.log(this.getArrayData(hash[head.value][i]));
                     if (head === hash[head.value][i]) {
                         return true;
@@ -121,6 +120,23 @@ var LinkList = (function () {
         }
         return false;
     };
+    LinkList.prototype.removeLinkFromEnd = function (head, n) {
+        var start = new LinkNode(null, null);
+        var fast = start;
+        var step = start;
+        fast.next = head;
+        for (var i = 0; i <= n; i++) {
+            step = step.next;
+        }
+        while (step != void 0) {
+            fast = fast.next;
+            console.log(fast);
+            step = step.next;
+            console.log(step);
+        }
+        fast.next = fast.next.next;
+        return start;
+    };
     LinkList.prototype._isExistPosition = function (position, arrLen) {
         if (position < 0 || position > arrLen.length)
             return -1;
@@ -129,8 +145,9 @@ var LinkList = (function () {
 }());
 var link = new LinkList();
 link.append(1);
-link.append(1);
-link.append(1);
-link.append(1);
-console.log(link.isCycleLink(link.getHead()));
+link.append(2);
+link.append(3);
+link.append(4);
+link.append(5);
+link.removeLinkFromEnd(link.getHead(), 2);
 //# sourceMappingURL=LinkedList.js.map

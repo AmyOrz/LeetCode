@@ -105,7 +105,6 @@ class LinkList{
             //the second cycle enter if
             if (hash[head.value]) {
                 for(let i = 0; i < hash[head.value].length; i++) {
-                 //   console.log(head)
                     console.log(this.getArrayData(hash[head.value][i]))
                     if (head === hash[head.value][i]) {
                         return true;
@@ -120,6 +119,24 @@ class LinkList{
         }
         return false;
     }
+    removeLinkFromEnd(head:LinkNode,n:number):LinkNode{
+        let start:LinkNode = new LinkNode(null,null);
+        let fast:LinkNode =  start;
+        let step:LinkNode = start;
+        fast.next = head;
+        for(let i = 0;i<=n;i++){
+            step = step.next;
+        }
+        while(step != void 0){
+            fast = fast.next;
+            console.log(fast)
+            step = step.next;
+            console.log(step)
+        }
+        fast.next = fast.next.next;
+        return start;
+
+    }
     private _isExistPosition(position:number,arrLen:number[]):number{
         if(position < 0 || position >arrLen.length)
             return -1;
@@ -127,8 +144,9 @@ class LinkList{
 }
 let link:LinkList = new LinkList();
 link.append(1);
-link.append(1);
-link.append(1);
-link.append(1);
-console.log(link.isCycleLink(link.getHead()));
+link.append(2);
+link.append(3);
+link.append(4);
+link.append(5);
+link.removeLinkFromEnd(link.getHead(),2);
 
