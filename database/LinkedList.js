@@ -96,6 +96,31 @@ var LinkList = (function () {
         }
         return head;
     };
+    LinkList.prototype.isCycleLink = function (head) {
+        if (!head) {
+            return false;
+        }
+        var hash = {};
+        while (head) {
+            //the second cycle enter if
+            if (hash[head.value]) {
+                for (var i = 0; i < hash[head.value].length; i++) {
+                    //   console.log(head)
+                    console.log(this.getArrayData(hash[head.value][i]));
+                    if (head === hash[head.value][i]) {
+                        return true;
+                    }
+                }
+                //再次遍历这个
+                hash[head.value].push(head);
+            }
+            else {
+                hash[head.value] = [head];
+            }
+            head = head.next;
+        }
+        return false;
+    };
     LinkList.prototype._isExistPosition = function (position, arrLen) {
         if (position < 0 || position > arrLen.length)
             return -1;
@@ -105,5 +130,7 @@ var LinkList = (function () {
 var link = new LinkList();
 link.append(1);
 link.append(1);
-console.log(link.removeDuplicate(link.getHead()));
+link.append(1);
+link.append(1);
+console.log(link.isCycleLink(link.getHead()));
 //# sourceMappingURL=LinkedList.js.map

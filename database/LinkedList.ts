@@ -96,6 +96,30 @@ class LinkList{
         }
         return head;
     }
+    isCycleLink(head:Link):boolean{
+        if(!head) {
+            return false;
+        }
+        let hash = {};
+        while(head) {
+            //the second cycle enter if
+            if (hash[head.value]) {
+                for(let i = 0; i < hash[head.value].length; i++) {
+                 //   console.log(head)
+                    console.log(this.getArrayData(hash[head.value][i]))
+                    if (head === hash[head.value][i]) {
+                        return true;
+                    }
+                }
+                //再次遍历这个
+                hash[head.value].push(head);
+            } else {
+                hash[head.value] = [head];
+            }
+            head = head.next;
+        }
+        return false;
+    }
     private _isExistPosition(position:number,arrLen:number[]):number{
         if(position < 0 || position >arrLen.length)
             return -1;
@@ -104,5 +128,7 @@ class LinkList{
 let link:LinkList = new LinkList();
 link.append(1);
 link.append(1);
-console.log(link.removeDuplicate(link.getHead()))
+link.append(1);
+link.append(1);
+console.log(link.isCycleLink(link.getHead()));
 
