@@ -130,12 +130,21 @@ var LinkList = (function () {
         }
         while (step != void 0) {
             fast = fast.next;
-            console.log(fast);
             step = step.next;
-            console.log(step);
         }
         fast.next = fast.next.next;
         return start;
+    };
+    LinkList.prototype.getIntersectionNode = function (headA, headB) {
+        if (headA == void 0 || headB == void 0)
+            return null;
+        var currentA = headA;
+        var currentB = headB;
+        while (currentA != currentB) {
+            currentA = currentA == void 0 ? currentB : currentA.next;
+            currentB = currentB == void 0 ? currentA : currentB.next;
+        }
+        return headA;
     };
     LinkList.prototype._isExistPosition = function (position, arrLen) {
         if (position < 0 || position > arrLen.length)

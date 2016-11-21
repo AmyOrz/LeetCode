@@ -129,13 +129,20 @@ class LinkList{
         }
         while(step != void 0){
             fast = fast.next;
-            console.log(fast)
             step = step.next;
-            console.log(step)
         }
         fast.next = fast.next.next;
         return start;
-
+    }
+    getIntersectionNode(headA:LinkNode,headB:LinkNode):LinkNode{
+        if(headA == void 0 || headB == void 0)return null;
+        let currentA:LinkNode = headA;
+        let currentB:LinkNode = headB;
+        while(currentA != currentB){
+            currentA = currentA == void 0?currentB:currentA.next;
+            currentB = currentB == void 0?currentA:currentB.next;
+        }
+        return headA;
     }
     private _isExistPosition(position:number,arrLen:number[]):number{
         if(position < 0 || position >arrLen.length)
