@@ -10,7 +10,7 @@ var romanToInt = function (s) {
     };
     var lastChar = hash[s[0]];
     var result = 0;
-    for (var i = 0; i < len; i++) {
+    for (var i = 0; i < s.length; i++) {
         var current = hash[s[i]];
         if (lastChar < current) {
             result = result - (lastChar * 2) + current;

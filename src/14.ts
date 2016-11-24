@@ -1,17 +1,16 @@
 let longestCommonPrefix = (strs:string[]):string=>{
-    if(strs.length == 0)return "";
-    let result:any = {};
-    let max:number = 0;
-    let maxIndex:string = "0";
-    for(let i = 0;i<strs.length;i++){
-        result[i] = strs[i].length;
-    }
-    for(let item in result){
-        if(result[item]>max){
-            max = result[item];
-            maxIndex = item;
+    if(strs.length == 0 || strs[0] == "")return "";
+    strs.sort();
+    let first:string = strs[0];
+    let last:string = strs[strs.length-1];
+    let result:string[] = [];
+    for(let i = 0;i<first.length;i++){
+        if(last.length > i && first[i] == last[i]){
+            result.push(first[i]);
+        }else{
+            return result.join("");
         }
     }
-    return strs[Number(maxIndex)];
+    return result.join("");
 };
-console.log(longestCommonPrefix(["asd","asdergerg","rthjujyujuy","vtg"]));
+console.log(longestCommonPrefix(["c","acc","ccc"]));

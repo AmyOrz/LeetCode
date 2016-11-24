@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/303.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/1.js" afterPath="$PROJECT_DIR$/src/1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/1.js.map" afterPath="$PROJECT_DIR$/src/1.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/1.ts" afterPath="$PROJECT_DIR$/src/1.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/13.js" afterPath="$PROJECT_DIR$/src/13.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/13.js.map" afterPath="$PROJECT_DIR$/src/13.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/13.ts" afterPath="$PROJECT_DIR$/src/13.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/14.js" afterPath="$PROJECT_DIR$/src/14.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/14.js.map" afterPath="$PROJECT_DIR$/src/14.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/14.ts" afterPath="$PROJECT_DIR$/src/14.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/448.js.map" afterPath="$PROJECT_DIR$/src/448.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/448.ts" afterPath="$PROJECT_DIR$/src/448.ts" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="303.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/303.ts">
+      <file leaf-file-name="14.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/14.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="303.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/303.js">
+      <file leaf-file-name="14.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/14.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="7" column="33" selection-start-line="1" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
+              <caret line="7" column="29" selection-start-line="1" selection-start-column="4" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -77,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sef.ts" />
         <option value="$PROJECT_DIR$/src/412.ts" />
         <option value="$PROJECT_DIR$/src/292.ts" />
         <option value="$PROJECT_DIR$/src/1.js" />
@@ -89,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/242.js" />
         <option value="$PROJECT_DIR$/src/242.ts" />
         <option value="$PROJECT_DIR$/src/217.ts" />
-        <option value="$PROJECT_DIR$/src/1.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/326.ts" />
         <option value="$PROJECT_DIR$/database/fck.js" />
@@ -116,8 +124,6 @@
         <option value="$PROJECT_DIR$/src/219.ts" />
         <option value="$PROJECT_DIR$/database/stack.js" />
         <option value="$PROJECT_DIR$/database/stack.ts" />
-        <option value="$PROJECT_DIR$/src/14.js" />
-        <option value="$PROJECT_DIR$/src/14.ts" />
         <option value="$PROJECT_DIR$/leetcode.html" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts" />
@@ -125,9 +131,13 @@
         <option value="$PROJECT_DIR$/src/160.ts" />
         <option value="$PROJECT_DIR$/database/LinkedList.ts" />
         <option value="$PROJECT_DIR$/src/448.js" />
-        <option value="$PROJECT_DIR$/src/448.ts" />
         <option value="$PROJECT_DIR$/src/303.js" />
         <option value="$PROJECT_DIR$/src/303.ts" />
+        <option value="$PROJECT_DIR$/src/448.ts" />
+        <option value="$PROJECT_DIR$/src/1.ts" />
+        <option value="$PROJECT_DIR$/src/13.ts" />
+        <option value="$PROJECT_DIR$/src/14.js" />
+        <option value="$PROJECT_DIR$/src/14.ts" />
       </list>
     </option>
   </component>
@@ -246,6 +256,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,24 +302,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="448.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -324,13 +317,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="303.ts" />
+              <option name="myItemId" value="14.ts" />
               <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,10 +345,7 @@
       <recent name="C:\Users\arvin\Documents\webStrom\LeetCode\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.303.js">
-    <configuration default="false" name="stack.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="stack.js" working-dir="$PROJECT_DIR$/database">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.14.js">
     <configuration default="false" name="14.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="14.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
@@ -367,6 +356,9 @@
       <method />
     </configuration>
     <configuration default="false" name="303.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="303.js" working-dir="$PROJECT_DIR$/src">
+      <method />
+    </configuration>
+    <configuration default="false" name="1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="1.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -423,19 +415,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.stack.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.14.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.448.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.303.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.14.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.448.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.303.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.1.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.303.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.448.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.14.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.stack.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.14.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.1.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.303.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.448.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -493,12 +485,13 @@
       <workItem from="1479692088008" duration="1174000" />
       <workItem from="1479693587673" duration="2966000" />
       <workItem from="1479903223071" duration="2209000" />
-      <workItem from="1479967255427" duration="1119000" />
+      <workItem from="1479967255427" duration="1693000" />
+      <workItem from="1479977705597" duration="2460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111351000" />
+    <option name="totallyTimeSpent" value="114385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -558,15 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/283.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/test.js" />
-    <entry file="file://$PROJECT_DIR$/database/test.ts" />
     <entry file="file://$PROJECT_DIR$/src/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/src/242.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -603,13 +587,6 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/1.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -786,21 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/14.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/14.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -822,6 +784,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/160.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/LinkedList.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3550">
+          <caret line="142" column="64" selection-start-line="142" selection-start-column="64" selection-end-line="142" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/448.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/303.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="33" selection-start-line="1" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/303.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/448.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/412.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -830,50 +845,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/160.ts">
+    <entry file="file://$PROJECT_DIR$/src/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/LinkedList.ts">
+    <entry file="file://$PROJECT_DIR$/src/1.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3550">
-          <caret line="142" column="64" selection-start-line="142" selection-start-column="64" selection-end-line="142" selection-end-column="65" />
+        <state relative-caret-position="325">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/448.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/448.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/303.ts">
+    <entry file="file://$PROJECT_DIR$/src/13.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/303.js">
+    <entry file="file://$PROJECT_DIR$/src/14.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/14.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" column="33" selection-start-line="1" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
+          <caret line="7" column="29" selection-start-line="1" selection-start-column="4" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>

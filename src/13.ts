@@ -10,7 +10,7 @@ var romanToInt = (s:string):number=>{
     };
     let lastChar:number = hash[s[0]];
     let result:number = 0;
-    for(let i = 0;i<len;i++){
+    for(let i = 0;i<s.length;i++){
         let current:string = hash[s[i]];
         if(lastChar < current){
             result = result - (lastChar * 2) + current;

@@ -1,19 +1,19 @@
 var longestCommonPrefix = function (strs) {
-    if (strs.length == 0)
+    if (strs.length == 0 || strs[0] == "")
         return "";
-    var result = {};
-    var max = 0;
-    var maxIndex = "0";
-    for (var i = 0; i < strs.length; i++) {
-        result[i] = strs[i].length;
-    }
-    for (var item in result) {
-        if (result[item] > max) {
-            max = result[item];
-            maxIndex = item;
+    strs.sort();
+    var first = strs[0];
+    var last = strs[strs.length - 1];
+    var result = [];
+    for (var i = 0; i < first.length; i++) {
+        if (last.length > i && first[i] == last[i]) {
+            result.push(first[i]);
+        }
+        else {
+            return result.join("");
         }
     }
-    return strs[Number(maxIndex)];
+    return result.join("");
 };
-console.log(longestCommonPrefix(["asd", "asdergerg", "rthjujyujuy", "vtg"]));
+console.log(longestCommonPrefix(["c", "acc", "ccc"]));
 //# sourceMappingURL=14.js.map

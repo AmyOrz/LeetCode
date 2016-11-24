@@ -1,6 +1,5 @@
 let findDisappearedNumbers = (nums:number[]):number[]=>{
     if(nums.length == 0 || nums.length == 1)return nums;
-
     let min:number = nums[0];
     let max:number = nums[0];
     for(let item of nums){

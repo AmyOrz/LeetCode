@@ -8,7 +8,6 @@ var leetCode = function (arr, target) {
             }
         }
     }
-    console.log(result);
     return result;
 };
 var array = [0, 4, 3, 0];
