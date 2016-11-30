@@ -1,22 +1,25 @@
-var isValid = function (s) {
-    if (s.length % 2 != 0)
-        return false;
-    var enterSymbol = ["(", ")", "{", "}", "[", "]"];
-    var result = [];
-    for (var i = 0, len = s.length; i < len; i++) {
-        if (enterSymbol.indexOf(s[i]) % 2 == 0) {
-            result.push(s[i]);
+var isValid = function (symbolString) {
+    _symbolIsValidByLen();
+    var allSymbolArray = ["(", ")", "{", "}", "[", "]"];
+    var symbolStack = [];
+    for (var i = 0, len = symbolString.length; i < len; i++) {
+        if (allSymbolArray.indexOf(symbolString[i]) % 2 == 0) {
+            symbolStack.push(symbolString[i]);
         }
         else {
-            var symbol = result.pop();
-            if (enterSymbol[enterSymbol.indexOf(symbol) + 1] != s[i]) {
+            var symbolInArrayLast = symbolStack.pop();
+            if (allSymbolArray[allSymbolArray.indexOf(symbolInArrayLast) + 1] != symbolInArrayLast[i]) {
                 return false;
             }
         }
     }
-    if (result.length > 0)
+    if (symbolStack.length > 0)
         return false;
     return true;
+    function _symbolIsValidByLen() {
+        if (symbolString.length % 2 != 0)
+            return false;
+    }
 };
 console.log(isValid("(("));
 //# sourceMappingURL=20.js.map

@@ -1,14 +1,14 @@
-var removeDuplicates = function (nums) {
-    if (nums.length == 0 || nums.length == 1)
+var removeDuplicates = function (deplicateArray) {
+    if (deplicateArray.length == 0 || deplicateArray.length == 1)
         return 0;
-    var i = nums.length - 1;
-    while (i >= 0) {
-        if (nums[i - 1] == nums[i]) {
-            nums.splice(i, 1);
+    var diminishingIndex = deplicateArray.length - 1;
+    while (diminishingIndex >= 0) {
+        if (deplicateArray[diminishingIndex - 1] == deplicateArray[diminishingIndex]) {
+            deplicateArray.splice(diminishingIndex, 1);
         }
-        i--;
+        diminishingIndex--;
     }
-    return nums.length;
+    return deplicateArray.length;
 };
 removeDuplicates([1, 1, 3, 4, 3, 2, 2]);
 //# sourceMappingURL=26.js.map

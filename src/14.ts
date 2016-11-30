@@ -1,16 +1,21 @@
-let longestCommonPrefix = (strs:string[]):string=>{
-    if(strs.length == 0 || strs[0] == "")return "";
-    strs.sort();
-    let first:string = strs[0];
-    let last:string = strs[strs.length-1];
-    let result:string[] = [];
-    for(let i = 0;i<first.length;i++){
-        if(last.length > i && first[i] == last[i]){
-            result.push(first[i]);
+let longestCommonPrefix = (arrayOfString:string[]):string=>{
+    if(arrayOfString.length == 0 || arrayOfString[0] == "")return "";
+    arrayOfString.sort();
+
+    let firstStringInArray:string = arrayOfString[0];
+    let lastStringInArray:string = arrayOfString[arrayOfString.length-1];
+
+    let arrayOfCommonPrefix:string[] = [];
+    for(let i = 0;i<firstStringInArray.length;i++){
+        if(_lastArrayLenThanTraverseAndFirstEqualLast(i)){
+            arrayOfCommonPrefix.push(firstStringInArray[i]);
         }else{
-            return result.join("");
+            return arrayOfCommonPrefix.join("");
         }
     }
-    return result.join("");
+    function _lastArrayLenThanTraverseAndFirstEqualLast(traverse:number){
+        return lastStringInArray.length > traverse && firstStringInArray[traverse] == lastStringInArray[traverse];
+    }
+    return arrayOfCommonPrefix.join("");
 };
-console.log(longestCommonPrefix(["c","acc","ccc"]));
+console.log(longestCommonPrefix(["c","ccc","ccc"]));

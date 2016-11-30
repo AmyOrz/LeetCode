@@ -1,17 +1,17 @@
-type paramOfNumber = {
-    (arr:number[],target:number):void;
-};
-let leetCode:paramOfNumber = (arr,target)=>{
-    let result:number[] = [];
-    for(let i = 0;i<arr.length;i++){
-        for(let j = i;j<arr.length;j++) {
-            if (arr[i] + arr[j] == target && i != j) {
-                result.push(i);
-                result.push(j);
+let twoSum = (arrayOfNumber:number[],target:number):number[]=>{
+    let NumberAddEqualTarget:number[] = [];
+    for(let i = 0;i<arrayOfNumber.length;i++){
+        for(let j = i;j<arrayOfNumber.length;j++) {
+            if (_NumberAddEqualTargetAndNumberUnLike(i,j)) {
+                NumberAddEqualTarget.push(i);
+                NumberAddEqualTarget.push(j);
             }
         }
     }
-    return result;
+    function _NumberAddEqualTargetAndNumberUnLike(i:number,j:number){
+        return arrayOfNumber[i] + arrayOfNumber[j] == target && i != j
+    }
+    return NumberAddEqualTarget;
 };
 let array:number[] = [0,4,3,0];
-leetCode(array,0);
+twoSum(array,0);

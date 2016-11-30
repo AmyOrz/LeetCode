@@ -1,18 +1,23 @@
-var isValid = (s:string):boolean=>{
-    if(s.length%2 != 0)return false;
-    let enterSymbol:string[] = ["(",")","{","}","[","]"];
-    let result:string[] = [];
-    for(let i = 0,len = s.length;i<len;i++){
-        if(enterSymbol.indexOf(s[i])%2 == 0){
-            result.push(s[i]);
+var isValid = (symbolString:string):boolean=>{
+    _symbolIsValidByLen();
+
+    let allSymbolArray:string[] = ["(",")","{","}","[","]"];
+    let symbolStack:string[] = [];
+    for(let i = 0,len = symbolString.length;i<len;i++){
+        if(allSymbolArray.indexOf(symbolString[i])%2 == 0){
+            symbolStack.push(symbolString[i]);
         }else{
-            let symbol:string = result.pop();
-            if(enterSymbol[enterSymbol.indexOf(symbol)+1] != s[i]){
+            let symbolInArrayLast:string = symbolStack.pop();
+            if(allSymbolArray[allSymbolArray.indexOf(symbolInArrayLast)+1] != symbolInArrayLast[i]){
                 return false;
             }
         }
     }
-    if(result.length >0)return false;
+    if(symbolStack.length >0)return false;
     return true;
+
+    function _symbolIsValidByLen(){
+        if(symbolString.length%2 != 0)return false;
+    }
 };
 console.log(isValid("(("));
