@@ -13,34 +13,16 @@ class TreeNode implements node{
     }
 }
 class Tree{
-    private root:TreeNode;
-    public insert(target:number):void{
-        let node = new TreeNode(target,null,null);
-        if(this.root == void 0){
-            this.root = node;
+    private _root:TreeNode;
+    public insert(resource:number):void {
+        if (this._root == void 0){
+            this._root = new TreeNode(resource, null, null);
         }else{
-            let current:node = this.root;
-            let parent:node;
-            while(current){
-                parent = current;
-                if(target < parent.val){
-                    current = current.left;
-                    if(current == void 0){
-                        parent.left = node;
-                        break;
-                    }
-                }else{
-                    current = current.right;
-                    if(current == void 0){
-                        parent.right = node;
-                        break;
-                    }
-                }
-            }
+            this._recursionMakeTree(resource,this._root);
         }
     }
     public getRoot():TreeNode{
-        return this.root;
+        return this._root;
     }
     public preOrder(tree:TreeNode):void{
         if(tree != void 0){
@@ -104,13 +86,26 @@ class Tree{
 
         return isSymmetric(tree.left,tree.right);
     }
+    private _recursionMakeTree(resource:number,target:TreeNode):void{
+        if(resource >= target.val){
+            if(target.right == void 0){
+                target.right = new TreeNode(resource,null,null);
+            }else{
+                this._recursionMakeTree(resource,target.right);
+            }
+        }else{
+            if(target.left == void 0){
+                target.left = new TreeNode(resource,null,null);
+            }else{
+                this._recursionMakeTree(resource,target.left);
+            }
+        }
+    }
 }
 var tree = new Tree();
+tree.insert(4);
+tree.insert(3);
+tree.insert(2);
 tree.insert(1);
-tree.insert(2);
-tree.insert(2);
-tree.insert(3);
-tree.insert(4);
-tree.insert(4);
-tree.insert(3);
-console.log(tree.Symmetric(tree.getRoot()));
+tree.insert(5);
+console.log(tree.getRoot())

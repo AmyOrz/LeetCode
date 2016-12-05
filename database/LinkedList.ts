@@ -155,5 +155,6 @@ link.append(2);
 link.append(3);
 link.append(4);
 link.append(5);
-link.removeLinkFromEnd(link.getHead(),2);
+link.removeAt(0);
+console.log(link.getHead())
 

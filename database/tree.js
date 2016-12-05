@@ -12,35 +12,16 @@ var TreeNode = (function () {
 var Tree = (function () {
     function Tree() {
     }
-    Tree.prototype.insert = function (target) {
-        var node = new TreeNode(target, null, null);
-        if (this.root == void 0) {
-            this.root = node;
+    Tree.prototype.insert = function (resource) {
+        if (this._root == void 0) {
+            this._root = new TreeNode(resource, null, null);
         }
         else {
-            var current = this.root;
-            var parent_1;
-            while (current) {
-                parent_1 = current;
-                if (target < parent_1.val) {
-                    current = current.left;
-                    if (current == void 0) {
-                        parent_1.left = node;
-                        break;
-                    }
-                }
-                else {
-                    current = current.right;
-                    if (current == void 0) {
-                        parent_1.right = node;
-                        break;
-                    }
-                }
-            }
+            this._recursionMakeTree(resource, this._root);
         }
     };
     Tree.prototype.getRoot = function () {
-        return this.root;
+        return this._root;
     };
     Tree.prototype.preOrder = function (tree) {
         if (tree != void 0) {
@@ -103,15 +84,31 @@ var Tree = (function () {
         };
         return isSymmetric(tree.left, tree.right);
     };
+    Tree.prototype._recursionMakeTree = function (resource, target) {
+        if (resource >= target.val) {
+            if (target.right == void 0) {
+                target.right = new TreeNode(resource, null, null);
+            }
+            else {
+                this._recursionMakeTree(resource, target.right);
+            }
+        }
+        else {
+            if (target.left == void 0) {
+                target.left = new TreeNode(resource, null, null);
+            }
+            else {
+                this._recursionMakeTree(resource, target.left);
+            }
+        }
+    };
     return Tree;
 }());
 var tree = new Tree();
+tree.insert(4);
+tree.insert(3);
+tree.insert(2);
 tree.insert(1);
-tree.insert(2);
-tree.insert(2);
-tree.insert(3);
-tree.insert(4);
-tree.insert(4);
-tree.insert(3);
-console.log(tree.Symmetric(tree.getRoot()));
+tree.insert(5);
+console.log(tree.getRoot());
 //# sourceMappingURL=tree.js.map
