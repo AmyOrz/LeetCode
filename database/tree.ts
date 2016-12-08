@@ -20,6 +20,7 @@ class Tree{
         }else{
             this._recursionMakeTree(resource,this._root);
         }
+
     }
     public getRoot():TreeNode{
         return this._root;
@@ -51,11 +52,13 @@ class Tree{
         if(tree != void 0){
             if(tree.left) {
                 i = this.depthData(tree.left);
+                console.log(tree.val +":,i="+i+",j="+j);
             }else
                 i = 0;
 
             if(tree.right){
                 j = this.depthData(tree.right);
+                console.log(tree.val +":,i="+i+",j="+j);
             }else
                 j = 0;
 
@@ -103,9 +106,10 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(4);
-tree.insert(3);
-tree.insert(2);
-tree.insert(1);
+tree.insert(14);
 tree.insert(5);
-console.log(tree.getRoot())
+tree.insert(6);
+tree.insert(12);
+tree.insert(17);
+tree.insert(15);
+console.log(tree.InverTree(tree.getRoot()))

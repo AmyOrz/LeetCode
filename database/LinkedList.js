@@ -105,7 +105,6 @@ var LinkList = (function () {
             //the second cycle enter if
             if (hash[head.value]) {
                 for (var i = 0; i < hash[head.value].length; i++) {
-                    console.log(this.getArrayData(hash[head.value][i]));
                     if (head === hash[head.value][i]) {
                         return true;
                     }

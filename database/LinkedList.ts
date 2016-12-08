@@ -1,9 +1,9 @@
 interface Link{
-    value:number,
+    value:number|string,
     next:Link;
 }
 class LinkNode implements Link{
-    constructor(public value:number,public next:Link){}
+    constructor(public value,public next){}
 }
 class LinkList{
     private head:Link;
@@ -12,7 +12,7 @@ class LinkList{
     }
     getArrayData(link?:Link):number[]{
         let current:Link = link == void 0?this.head:link;
-        let listArr:number[] = [];
+        let listArr:any[] = [];
         while(current.next){
             listArr.push(current.value);
             current = current.next;
@@ -105,7 +105,6 @@ class LinkList{
             //the second cycle enter if
             if (hash[head.value]) {
                 for(let i = 0; i < hash[head.value].length; i++) {
-                    console.log(this.getArrayData(hash[head.value][i]))
                     if (head === hash[head.value][i]) {
                         return true;
                     }
