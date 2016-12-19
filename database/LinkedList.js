@@ -75,6 +75,10 @@ var LinkList = (function () {
         }
     };
     LinkList.prototype.reverse = function (head) {
+        if (head == void 0)
+            return null;
+        if (head.next == void 0)
+            return head;
         var node = head, pre = null, temp = null;
         while (node != void 0) {
             temp = node.next;
@@ -152,11 +156,10 @@ var LinkList = (function () {
     return LinkList;
 }());
 var link = new LinkList();
-link.append(1);
-link.append(2);
-link.append(3);
-link.append(4);
-link.append(5);
-link.removeAt(0);
-console.log(link.getHead());
+var first = Date.now();
+for (var i = 0; i < 10000; i++) {
+    link.append(i + 1);
+}
+var last = Date.now();
+console.log(last - first);
 //# sourceMappingURL=LinkedList.js.map

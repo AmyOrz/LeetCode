@@ -1,22 +1,9 @@
-var lastTime = Date.now();
-var sum = 0;
-/*for(let j = 0;j<4;j++) {
-    for (let i = 0; i < 1000000000; i++) {
-        sum += i;
-    }
-}*/
-for (var i = 0; i < 1000000000; i++) {
-    sum += i;
+var unit = ['', '十', '百', '千', '万'];
+var n2c = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+function convert(i) {
+    return i.toString().split('').reverse().map(function (value, key) {
+        return n2c[value] + unit[key];
+    }).reverse().join('').replace(/(零.)+/g, '零').replace(/^零|零+$/, '').replace(/二(?=[万千])/g, '两').replace(/^一十/g, '十');
 }
-for (var i = 0; i < 1000000000; i++) {
-    sum += i;
-}
-for (var i = 0; i < 1000000000; i++) {
-    sum += i;
-}
-for (var i = 0; i < 1000000000; i++) {
-    sum += i;
-}
-var nowTime = Date.now();
-console.log(nowTime - lastTime);
+console.log(convert(22211));
 //# sourceMappingURL=test.js.map

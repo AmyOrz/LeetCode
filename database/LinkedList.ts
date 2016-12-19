@@ -21,7 +21,7 @@ class LinkList{
         return listArr;
     }
     append(val:number):void{
-        let node:LinkNode = new LinkNode(val,null);
+        let node:Link = new LinkNode(val,null);
         if(this.head == void 0){
             this.head = node;
         }else{
@@ -73,6 +73,9 @@ class LinkList{
         }
     }
     reverse(head:Link):Link{
+        if(head == void 0)return null;
+        if(head.next == void 0)return head;
+
         let node:Link = head,
             pre:Link = null,
             temp:Link = null;
@@ -149,11 +152,10 @@ class LinkList{
     }
 }
 let link:LinkList = new LinkList();
-link.append(1);
-link.append(2);
-link.append(3);
-link.append(4);
-link.append(5);
-link.removeAt(0);
-console.log(link.getHead())
+let first = Date.now();
+for(let i = 0;i<10000;i++){
+    link.append(i+1);
+}
+let last = Date.now();
+console.log(last-first)
 
