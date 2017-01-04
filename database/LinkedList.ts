@@ -1,5 +1,5 @@
 interface Link{
-    value:number|string,
+    value:number|string;
     next:Link;
 }
 class LinkNode implements Link{
