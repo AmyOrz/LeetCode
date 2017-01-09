@@ -162,4 +162,4 @@ for (var i = 0; i < 10000; i++) {
 }
 var last = Date.now();
 console.log(last - first);
-//# sourceMappingURL=LinkedList.js.map
+//# sourceMappingURL=LinkList.js.map

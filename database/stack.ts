@@ -1,21 +1,30 @@
-class Stack{
-    private _stackArr:number[] = [];
-    push(target:number):void{
-        this._stackArr.push(target);
+interface IStackNode{
+    val:number|string;
+    next:StackNode;
+}
+class StackNode implements IStackNode{
+    constructor(public val,public next){}
+}
+class Stack {
+    private first:StackNode;
+    private len:number;
+    public push(val:number|string):void{
+        let oldNode:StackNode = this.first;
+        this.first = new StackNode(val,null);
+        this.first.next = oldNode;
+        this.len++;
     }
-    pop():void{
-        this._stackArr.pop();
+    public pop():number|string{
+        let oldNode:StackNode = this.first;
+        this.first = oldNode.next;
+        this.len--;
+        return oldNode.val;
     }
-    top():number{
-        return this._stackArr.length > 0?this._stackArr[0]:null;
+    public top():number|string{
+        if(this.first == void 0)return null;
+        else return this.first.val;
     }
-    empty():boolean{
-        return this._stackArr.length == 0;
+    public isEmpty():boolean{
+        return this.len == 0;
     }
 }
-let stack:Stack = new Stack();
-stack.push(1);
-stack.push(2);
-stack.push(3);
-stack.push(4);
-console.log(stack.top());
