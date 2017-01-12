@@ -76,17 +76,16 @@ class LinkList{
         if(head == void 0)return null;
         if(head.next == void 0)return head;
 
-        let node:Link = head,
-            pre:Link = null,
-            temp:Link = null;
-
-        while(node != void 0){
-            temp = node.next;
-            node.next = pre;
-            pre = node;
-            node = temp;
+        let first:Link = head;
+        let result:Link = null;
+        let temp:Link = null;
+        while(first != null){
+            temp = first;
+            first = first.next;
+            temp.next = result;
+            result = temp;
         }
-        return pre;
+        return result;
     }
     removeDuplicate(head:Link):Link{
         let current:Link = head;
@@ -152,10 +151,9 @@ class LinkList{
     }
 }
 let link:LinkList = new LinkList();
-let first = Date.now();
-for(let i = 0;i<10000;i++){
-    link.append(i+1);
-}
-let last = Date.now();
-console.log(last-first)
-
+link.append(1);
+link.append(2);
+link.append(3);
+link.append(4);
+let fck:Link = link.reverse(link.getHead());
+console.log(link.getArrayData(fck))

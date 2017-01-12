@@ -79,14 +79,16 @@ var LinkList = (function () {
             return null;
         if (head.next == void 0)
             return head;
-        var node = head, pre = null, temp = null;
-        while (node != void 0) {
-            temp = node.next;
-            node.next = pre;
-            pre = node;
-            node = temp;
+        var first = head;
+        var result = null;
+        var temp = null;
+        while (first != null) {
+            temp = first;
+            first = first.next;
+            temp.next = result;
+            result = temp;
         }
-        return pre;
+        return result;
     };
     LinkList.prototype.removeDuplicate = function (head) {
         var current = head;
@@ -156,10 +158,10 @@ var LinkList = (function () {
     return LinkList;
 }());
 var link = new LinkList();
-var first = Date.now();
-for (var i = 0; i < 10000; i++) {
-    link.append(i + 1);
-}
-var last = Date.now();
-console.log(last - first);
+link.append(1);
+link.append(2);
+link.append(3);
+link.append(4);
+var fck = link.reverse(link.getHead());
+console.log(link.getArrayData(fck));
 //# sourceMappingURL=LinkList.js.map
