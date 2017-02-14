@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/496.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/476.js" afterPath="$PROJECT_DIR$/src/476.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/476.js.map" afterPath="$PROJECT_DIR$/src/476.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/476.ts" afterPath="$PROJECT_DIR$/src/476.ts" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,31 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quickSort.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/quickSort.ts">
+      <file leaf-file-name="496.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/496.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="476.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/476.ts">
+      <file leaf-file-name="496.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/496.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="476.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/476.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="22" selection-start-line="1" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="108">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -111,8 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/121.ts" />
-        <option value="$PROJECT_DIR$/aa.js" />
         <option value="$PROJECT_DIR$/src/191.js" />
         <option value="$PROJECT_DIR$/src/191.ts" />
         <option value="$PROJECT_DIR$/src/198.ts" />
@@ -162,6 +148,8 @@
         <option value="$PROJECT_DIR$/src/461.ts" />
         <option value="$PROJECT_DIR$/src/476.js" />
         <option value="$PROJECT_DIR$/src/476.ts" />
+        <option value="$PROJECT_DIR$/src/496.js" />
+        <option value="$PROJECT_DIR$/src/496.ts" />
       </list>
     </option>
   </component>
@@ -311,6 +299,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="496.ts" />
+              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="476.ts" />
               <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
             </PATH_ELEMENT>
@@ -368,11 +374,8 @@
       <recent name="C:\Users\arvin\Documents\webStrom\LeetCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.476.js">
+  <component name="RunManager" selected="Node.js.496.js">
     <configuration default="false" name="LinkedList.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/database/LinkList.js" working-dir="$PROJECT_DIR$/database">
-      <method />
-    </configuration>
-    <configuration default="false" name="167.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="167.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="false" name="quickSort.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="quickSort.js" working-dir="$PROJECT_DIR$/database">
@@ -382,6 +385,9 @@
       <method />
     </configuration>
     <configuration default="false" name="476.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="476.js" working-dir="$PROJECT_DIR$/src">
+      <method />
+    </configuration>
+    <configuration default="false" name="496.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="496.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -439,18 +445,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.LinkedList.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.167.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.461.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.476.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.461.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.476.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.496.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.476.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.461.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.LinkedList.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.167.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.496.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.476.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.461.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.LinkedList.js" />
       </list>
     </recent_temporary>
   </component>
@@ -537,12 +543,12 @@
       <workItem from="1484309068590" duration="53000" />
       <workItem from="1484815787000" duration="5395000" />
       <workItem from="1484877313740" duration="1428000" />
-      <workItem from="1487068784841" duration="3757000" />
+      <workItem from="1487068784841" duration="5128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182774000" />
+    <option name="totallyTimeSpent" value="184145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -615,14 +621,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aa.js" />
-    <entry file="file://$PROJECT_DIR$/src/26.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/219.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -950,7 +948,23 @@
     <entry file="file://$PROJECT_DIR$/src/476.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="22" selection-start-line="1" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/496.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/496.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
