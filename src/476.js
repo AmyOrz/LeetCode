@@ -1,13 +1,11 @@
 var findComplement = function (num) {
-    var binary = num.toString(2);
-    var result = "";
-    for (var i = 0; i < binary.length; i++) {
-        if (binary[i] == "0")
-            result += "1";
-        else if (binary[i] == "1")
-            result += "0";
+    var mask = 1;
+    var temp = num;
+    while (temp > 0) {
+        mask = mask << 1;
+        temp = temp >> 1;
     }
-    return parseInt(result, 2);
+    return num ^ (mask - 1);
 };
 var a = findComplement(2);
 console.log(a);

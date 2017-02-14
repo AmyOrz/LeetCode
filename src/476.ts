@@ -1,11 +1,11 @@
 let findComplement = (num:number):number=>{
-    let binary:string = num.toString(2);
-    let result:string = "";
-    for(let i = 0;i<binary.length;i++){
-        if(binary[i] == "0")result += "1";
-        else if(binary[i] == "1")result += "0";
+    let mask:number = 1;
+    let temp:number = num;
+    while(temp > 0){
+        mask = mask << 1;
+        temp = temp >> 1;
     }
-    return parseInt(result,2);
+    return num ^ (mask-1);
 };
 let a = findComplement(2);
-console.log(a)
+console.log(a);
