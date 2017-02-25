@@ -1,5 +1,5 @@
 /**
- * 二叉树的遍历和度
+ * 二叉树
  */
 interface node{
     val:number;
@@ -89,6 +89,17 @@ class Tree{
 
         return isSymmetric(tree.left,tree.right);
     }
+    public sumOfLeftLeaves(tree:TreeNode):number{
+        if(!tree)return 0;
+        return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
+    }
+    private getLeftVal(tree:TreeNode,isLeft:boolean):number{
+        if(tree == null)return 0;
+        if(tree.left == null && tree.right == null && isLeft){
+            return tree.val;
+        }
+        return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
+    }
     private _recursionMakeTree(resource:number,target:TreeNode):void{
         if(resource >= target.val){
             if(target.right == void 0){
@@ -106,10 +117,8 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(14);
-tree.insert(5);
-tree.insert(6);
-tree.insert(12);
-tree.insert(17);
-tree.insert(15);
-console.log(tree.InverTree(tree.getRoot()))
+tree.insert(1);
+tree.insert(null);
+tree.insert(2);
+console.log(tree.getRoot())
+console.log(tree.sumOfLeftLeaves(tree.getRoot()))

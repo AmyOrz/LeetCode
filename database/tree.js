@@ -86,6 +86,19 @@ var Tree = (function () {
         };
         return isSymmetric(tree.left, tree.right);
     };
+    Tree.prototype.sumOfLeftLeaves = function (tree) {
+        if (!tree)
+            return 0;
+        return this.getLeftVal(tree.left, true) + this.getLeftVal(tree.right, false);
+    };
+    Tree.prototype.getLeftVal = function (tree, isLeft) {
+        if (tree == null)
+            return 0;
+        if (tree.left == null && tree.right == null && isLeft) {
+            return tree.val;
+        }
+        return this.getLeftVal(tree.left, true) + this.getLeftVal(tree.right, false);
+    };
     Tree.prototype._recursionMakeTree = function (resource, target) {
         if (resource >= target.val) {
             if (target.right == void 0) {
@@ -107,11 +120,9 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
-tree.insert(14);
-tree.insert(5);
-tree.insert(6);
-tree.insert(12);
-tree.insert(17);
-tree.insert(15);
-console.log(tree.InverTree(tree.getRoot()));
+tree.insert(1);
+tree.insert(null);
+tree.insert(2);
+console.log(tree.getRoot());
+console.log(tree.sumOfLeftLeaves(tree.getRoot()));
 //# sourceMappingURL=tree.js.map
