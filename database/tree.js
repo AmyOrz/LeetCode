@@ -26,8 +26,8 @@ var Tree = (function () {
     Tree.prototype.preOrder = function (tree) {
         if (tree != void 0) {
             tree.showData();
-            this.midOrder(tree.left);
-            this.midOrder(tree.right);
+            this.preOrder(tree.left);
+            this.preOrder(tree.right);
         }
     };
     Tree.prototype.midOrder = function (tree) {
@@ -39,8 +39,8 @@ var Tree = (function () {
     };
     Tree.prototype.lastOrder = function (tree) {
         if (tree != void 0) {
-            this.midOrder(tree.left);
-            this.midOrder(tree.right);
+            this.lastOrder(tree.left);
+            this.lastOrder(tree.right);
             tree.showData();
         }
     };
@@ -86,6 +86,8 @@ var Tree = (function () {
         };
         return isSymmetric(tree.left, tree.right);
     };
+    Tree.prototype.isSameTree = function (m, n) {
+    };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
             return 0;
@@ -120,9 +122,11 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
-tree.insert(1);
-tree.insert(null);
+tree.insert(4);
+tree.insert(3);
+tree.insert(5);
+tree.insert(6);
+tree.insert(11);
 tree.insert(2);
-console.log(tree.getRoot());
-console.log(tree.sumOfLeftLeaves(tree.getRoot()));
+console.log(tree.midOrder(tree.getRoot()));
 //# sourceMappingURL=tree.js.map

@@ -28,8 +28,8 @@ class Tree{
     public preOrder(tree:TreeNode):void{
         if(tree != void 0){
             tree.showData();
-            this.midOrder(tree.left);
-            this.midOrder(tree.right);
+            this.preOrder(tree.left);
+            this.preOrder(tree.right);
         }
     }
     public midOrder(tree:TreeNode):void{
@@ -41,8 +41,8 @@ class Tree{
     }
     public lastOrder(tree:TreeNode):void{
         if(tree != void 0){
-            this.midOrder(tree.left);
-            this.midOrder(tree.right);
+            this.lastOrder(tree.left);
+            this.lastOrder(tree.right);
             tree.showData();
         }
     }
@@ -89,6 +89,9 @@ class Tree{
 
         return isSymmetric(tree.left,tree.right);
     }
+    public isSameTree(m:TreeNode,n:TreeNode):boolean{
+        
+    }
     public sumOfLeftLeaves(tree:TreeNode):number{
         if(!tree)return 0;
         return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
@@ -117,8 +120,10 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(1);
-tree.insert(null);
+tree.insert(4);
+tree.insert(3);
+tree.insert(5);
+tree.insert(6);
+tree.insert(11);
 tree.insert(2);
-console.log(tree.getRoot())
-console.log(tree.sumOfLeftLeaves(tree.getRoot()))
+console.log(tree.midOrder(tree.getRoot()))

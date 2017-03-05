@@ -31,4 +31,4 @@ var Stack = (function () {
     };
     return Stack;
 }());
-//# sourceMappingURL=Stack.js.map
+//# sourceMappingURL=stack.js.map
