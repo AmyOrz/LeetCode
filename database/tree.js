@@ -87,6 +87,14 @@ var Tree = (function () {
         return isSymmetric(tree.left, tree.right);
     };
     Tree.prototype.isSameTree = function (m, n) {
+        if (m == null && n == null)
+            return true;
+        if (m == null || n == null)
+            return false;
+        if (m.val == n.val) {
+            return this.isSameTree(m.left, n.left) && this.isSameTree(m.right, n.right);
+        }
+        return false;
     };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
@@ -128,5 +136,4 @@ tree.insert(5);
 tree.insert(6);
 tree.insert(11);
 tree.insert(2);
-console.log(tree.midOrder(tree.getRoot()));
 //# sourceMappingURL=tree.js.map

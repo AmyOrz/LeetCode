@@ -90,7 +90,12 @@ class Tree{
         return isSymmetric(tree.left,tree.right);
     }
     public isSameTree(m:TreeNode,n:TreeNode):boolean{
-        
+        if(m == null && n == null)return true;
+        if(m == null || n == null)return false;
+        if(m.val == n.val){
+            return this.isSameTree(m.left,n.left) && this.isSameTree(m.right,n.right);
+        }
+        return false;
     }
     public sumOfLeftLeaves(tree:TreeNode):number{
         if(!tree)return 0;
@@ -126,4 +131,3 @@ tree.insert(5);
 tree.insert(6);
 tree.insert(11);
 tree.insert(2);
-console.log(tree.midOrder(tree.getRoot()))
