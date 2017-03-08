@@ -96,6 +96,31 @@ var Tree = (function () {
         }
         return false;
     };
+    Tree.prototype.getMinimumDifference = function (tree) {
+        if (tree == void 0)
+            return 0;
+        var treeValArr = [];
+        getData(tree);
+        treeValArr.sort(function (a, b) { return a - b; });
+        var res = treeValArr[1] - treeValArr[0];
+        for (var i = 1, len = treeValArr.length; i < len - 1; i++) {
+            if (treeValArr[i] == void 0)
+                break;
+            var min = treeValArr[i + 1] - treeValArr[i];
+            if (min < res) {
+                res = min;
+            }
+        }
+        console.log(res);
+        return res;
+        function getData(tree) {
+            if (tree == void 0)
+                return;
+            treeValArr.push(tree.val);
+            getData(tree.left);
+            getData(tree.right);
+        }
+    };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
             return 0;
@@ -130,10 +155,11 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
+tree.insert(12);
+tree.insert(8);
+tree.insert(16);
+tree.insert(null);
 tree.insert(4);
-tree.insert(3);
-tree.insert(5);
-tree.insert(6);
-tree.insert(11);
-tree.insert(2);
+var a = tree.getMinimumDifference(tree.getRoot());
+console.log(a);
 //# sourceMappingURL=tree.js.map

@@ -97,6 +97,29 @@ class Tree{
         }
         return false;
     }
+    public getMinimumDifference(tree:TreeNode):number{
+        if(tree == void 0)return 0;
+        let treeValArr:number[] = [];
+        getData(tree);
+        treeValArr.sort((a,b) => a-b);
+        let res:number = treeValArr[1] - treeValArr[0];
+        for(let i = 1,len = treeValArr.length;i<len-1;i++){
+            if(treeValArr[i] == void 0)break;
+            let min:number = treeValArr[i+1] - treeValArr[i];
+            if(min < res){
+                res = min;
+            }
+        }
+        console.log(res)
+        return res;
+
+        function getData(tree:TreeNode){
+            if(tree == void 0)return;
+            treeValArr.push(tree.val);
+            getData(tree.left);
+            getData(tree.right);
+        }
+    }
     public sumOfLeftLeaves(tree:TreeNode):number{
         if(!tree)return 0;
         return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
@@ -125,9 +148,10 @@ class Tree{
     }
 }
 var tree = new Tree();
+tree.insert(12);
+tree.insert(8);
+tree.insert(16);
+tree.insert(null);
 tree.insert(4);
-tree.insert(3);
-tree.insert(5);
-tree.insert(6);
-tree.insert(11);
-tree.insert(2);
+var a = tree.getMinimumDifference(tree.getRoot());
+console.log(a)
