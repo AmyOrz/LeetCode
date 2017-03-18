@@ -111,7 +111,6 @@ var Tree = (function () {
                 res = min;
             }
         }
-        console.log(res);
         return res;
         function getData(tree) {
             if (tree == void 0)
@@ -120,6 +119,32 @@ var Tree = (function () {
             getData(tree.left);
             getData(tree.right);
         }
+    };
+    Tree.prototype.sortedArrayToBST = function (nums) {
+        var len = nums.length;
+        if (len == 1)
+            return new TreeNode(nums[0], null, null);
+        var midUp = ~~(len / 2), midDown = ~~(len / 2);
+        while (midDown > 0 && midUp < len) {
+            if (midDown == midUp) {
+                this.insert(nums[midDown]);
+            }
+            else {
+                this.insert(nums[midDown]);
+                this.insert(nums[midUp]);
+            }
+            nums[midDown] = null;
+            nums[midUp] = null;
+            midDown = ~~(midDown / 2);
+            midUp = ~~((len - midUp) / 2 + midUp);
+        }
+        for (var _i = 0, nums_1 = nums; _i < nums_1.length; _i++) {
+            var item = nums_1[_i];
+            if (item == void 0)
+                continue;
+            this.insert(item);
+        }
+        return this._root;
     };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
@@ -155,11 +180,5 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
-tree.insert(12);
-tree.insert(8);
-tree.insert(16);
-tree.insert(null);
-tree.insert(4);
-var a = tree.getMinimumDifference(tree.getRoot());
-console.log(a);
+tree.sortedArrayToBST([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 //# sourceMappingURL=tree.js.map

@@ -89,6 +89,7 @@ class Tree{
 
         return isSymmetric(tree.left,tree.right);
     }
+
     public isSameTree(m:TreeNode,n:TreeNode):boolean{
         if(m == null && n == null)return true;
         if(m == null || n == null)return false;
@@ -97,6 +98,7 @@ class Tree{
         }
         return false;
     }
+
     public getMinimumDifference(tree:TreeNode):number{
         if(tree == void 0)return 0;
         let treeValArr:number[] = [];
@@ -110,7 +112,6 @@ class Tree{
                 res = min;
             }
         }
-        console.log(res)
         return res;
 
         function getData(tree:TreeNode){
@@ -120,10 +121,49 @@ class Tree{
             getData(tree.right);
         }
     }
+
+    public sortedArrayToBST(nums:number[]):TreeNode{
+        let len = nums.length;
+
+        if(len == 1)return new TreeNode(nums[0],null,null);
+
+        let midUp = ~~(len/2),
+            midDown = ~~(len/2);
+
+        while(midDown > 0 && midUp < len){
+
+            if(midDown == midUp) {
+
+                this.insert(nums[midDown]);
+
+            }else {
+
+
+                this.insert(nums[midDown]);
+                this.insert(nums[midUp]);
+
+            }
+            nums[midDown] = null;
+            nums[midUp] = null;
+
+            midDown = ~~(midDown/2);
+            midUp = ~~((len - midUp)/2 + midUp);
+
+        }
+        for(let item of nums){
+            if(item == void 0)continue;
+
+            this.insert(item);
+        }
+        return this._root;
+    }
+
     public sumOfLeftLeaves(tree:TreeNode):number{
         if(!tree)return 0;
         return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
     }
+
+
     private getLeftVal(tree:TreeNode,isLeft:boolean):number{
         if(tree == null)return 0;
         if(tree.left == null && tree.right == null && isLeft){
@@ -131,6 +171,7 @@ class Tree{
         }
         return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);
     }
+
     private _recursionMakeTree(resource:number,target:TreeNode):void{
         if(resource >= target.val){
             if(target.right == void 0){
@@ -148,10 +189,5 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(12);
-tree.insert(8);
-tree.insert(16);
-tree.insert(null);
-tree.insert(4);
-var a = tree.getMinimumDifference(tree.getRoot());
-console.log(a)
+
+tree.sortedArrayToBST([1,2,3,4,5,6,7,8,9]);
