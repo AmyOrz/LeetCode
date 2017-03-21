@@ -49,18 +49,18 @@ var Tree = (function () {
         if (tree != void 0) {
             if (tree.left) {
                 i = this.depthData(tree.left);
-                console.log(tree.val + ":,i=" + i + ",j=" + j);
             }
             else
                 i = 0;
             if (tree.right) {
                 j = this.depthData(tree.right);
-                console.log(tree.val + ":,i=" + i + ",j=" + j);
             }
             else
                 j = 0;
             return i > j ? i + 1 : j + 1;
         }
+        else
+            return 0;
     };
     Tree.prototype.InverTree = function (tree) {
         if (tree != void 0) {
@@ -146,6 +146,15 @@ var Tree = (function () {
         }
         return this._root;
     };
+    Tree.prototype.diameterOfBinaryTree = function (tree) {
+        if (!tree)
+            return 0;
+        if (!tree.left && !tree.right)
+            return 0;
+        var lenLeft = this.depthData(tree.left);
+        var lenRight = this.depthData(tree.right);
+        return lenLeft + lenRight;
+    };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
             return 0;
@@ -180,5 +189,12 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
-tree.sortedArrayToBST([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+tree.insert(1);
+tree.insert(2);
+tree.insert(3);
+tree.insert(4);
+tree.insert(5);
+tree.midOrder(tree.getRoot());
+var a = tree.diameterOfBinaryTree(tree.getRoot());
+console.log(a);
 //# sourceMappingURL=tree.js.map
