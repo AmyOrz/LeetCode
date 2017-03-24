@@ -1,4 +1,5 @@
 var toHex = function (num) {
+    console.log((5 >>> 0).toString(2));
     if (num >= 0) {
         return num.toString(16);
     }
