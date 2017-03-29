@@ -165,6 +165,12 @@ class Tree{
         return lenLeft+lenRight;
     }
 
+    public pathSum(tree:TreeNode,sum:number):number{
+        if(tree == void 0 )return 0;
+
+
+    }
+
     public sumOfLeftLeaves(tree:TreeNode):number{
         if(!tree)return 0;
         return this.getLeftVal(tree.left,true) + this.getLeftVal(tree.right,false);

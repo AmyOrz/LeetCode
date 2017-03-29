@@ -155,6 +155,10 @@ var Tree = (function () {
         var lenRight = this.depthData(tree.right);
         return lenLeft + lenRight;
     };
+    Tree.prototype.pathSum = function (tree, sum) {
+        if (tree == void 0)
+            return 0;
+    };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)
             return 0;
