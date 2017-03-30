@@ -24,9 +24,7 @@ b[2]();
 var c = {};
 for (var j = 0; j < 4; j++) {
     c[j] = (function (j) {
-        return function () {
-            console.log(j);
-        };
+        return function () { return console.log(j); };
     })(j);
 }
 c[1]();
