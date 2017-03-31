@@ -158,6 +158,12 @@ var Tree = (function () {
     Tree.prototype.pathSum = function (tree, sum) {
         if (tree == void 0)
             return 0;
+        return this.pathSumTemp(tree, sum) + this.pathSum(tree.left, sum) + this.pathSum(tree.right, sum);
+    };
+    Tree.prototype.pathSumTemp = function (tree, sum) {
+        if (tree = void 0)
+            return 0;
+        return (tree.val == sum ? 1 : 0) + this.pathSumTemp(tree.left, sum - tree.val) + this.pathSumTemp(tree.right, sum - tree.val);
     };
     Tree.prototype.sumOfLeftLeaves = function (tree) {
         if (!tree)

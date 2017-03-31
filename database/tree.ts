@@ -168,7 +168,13 @@ class Tree{
     public pathSum(tree:TreeNode,sum:number):number{
         if(tree == void 0 )return 0;
 
+        return this.pathSumTemp(tree,sum) + this.pathSum(tree.left,sum) + this.pathSum(tree.right,sum);
+    }
 
+    private pathSumTemp(tree:TreeNode,sum:number){
+        if(tree = void 0)return 0;
+
+        return (tree.val == sum?1:0)+this.pathSumTemp(tree.left,sum-tree.val) + this.pathSumTemp(tree.right,sum-tree.val);
     }
 
     public sumOfLeftLeaves(tree:TreeNode):number{

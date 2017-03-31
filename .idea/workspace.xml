@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qq.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Memoize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Memoize.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Memoize.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/qq.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FRP/closure.js" afterPath="$PROJECT_DIR$/FRP/closure.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FRP/closure.js.map" afterPath="$PROJECT_DIR$/FRP/closure.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FRP/closure.ts" afterPath="$PROJECT_DIR$/FRP/closure.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.js" afterPath="$PROJECT_DIR$/database/tree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.js.map" afterPath="$PROJECT_DIR$/database/tree.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tree.ts" afterPath="$PROJECT_DIR$/database/tree.ts" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,48 +33,18 @@
       <file leaf-file-name="70.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/70.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="0">
               <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tree.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/tree.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qq.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qq.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="closure.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FRP/closure.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="closure.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/closure.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="529">
+              <caret line="170" column="102" selection-start-line="170" selection-start-column="102" selection-end-line="170" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -91,8 +57,8 @@
       <list>
         <option value="HTML File" />
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -145,8 +111,6 @@
         <option value="$PROJECT_DIR$/ttt.ts" />
         <option value="$PROJECT_DIR$/ttt.js" />
         <option value="$PROJECT_DIR$/src/70.ts" />
-        <option value="$PROJECT_DIR$/src/437.ts" />
-        <option value="$PROJECT_DIR$/database/tree.ts" />
         <option value="$PROJECT_DIR$/FRP/Memoize.js" />
         <option value="$PROJECT_DIR$/FRP/Memoize.ts" />
         <option value="$PROJECT_DIR$/FRP/test.js" />
@@ -158,6 +122,8 @@
         <option value="$PROJECT_DIR$/FRP/curry_test.js" />
         <option value="$PROJECT_DIR$/qq.js" />
         <option value="$PROJECT_DIR$/FRP/closure.ts" />
+        <option value="$PROJECT_DIR$/src/437.ts" />
+        <option value="$PROJECT_DIR$/database/tree.ts" />
       </list>
     </option>
   </component>
@@ -302,26 +268,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FRP" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FRP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closure.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -553,12 +501,12 @@
       <workItem from="1490271943014" duration="221000" />
       <workItem from="1490321034874" duration="489000" />
       <workItem from="1490701914381" duration="11361000" />
-      <workItem from="1490872568434" duration="2742000" />
+      <workItem from="1490872568434" duration="4230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267249000" />
+    <option name="totallyTimeSpent" value="268737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -864,10 +812,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt.ts" />
     <entry file="file://$PROJECT_DIR$/ttt.js" />
-    <entry file="file://$PROJECT_DIR$/src/437.ts" />
     <entry file="file://$PROJECT_DIR$/src/70.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="0">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
@@ -901,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/curry_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FRP/curry.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -915,10 +855,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/tree.ts">
+    <entry file="file://$PROJECT_DIR$/FRP/closure.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+        <state relative-caret-position="-171">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1490933188591" expanded="true" signature="61:124" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="88:121" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="160:181" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="252:378" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="278:372" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="326:365" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="448:544" ph="{...}" />
+            <marker date="1490933188591" expanded="true" signature="475:537" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/curry_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/closure.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -931,18 +896,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/closure.js">
+    <entry file="file://$PROJECT_DIR$/src/437.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/closure.ts">
+    <entry file="file://$PROJECT_DIR$/database/tree.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="529">
+          <caret line="170" column="102" selection-start-line="170" selection-start-column="102" selection-end-line="170" selection-end-column="102" />
           <folding />
         </state>
       </provider>
