@@ -11,8 +11,6 @@ var maxSubArray = function(nums:number[]):number{
 
         if(sum > max)
             max = sum;
-
-        console.log(max)
     }
     return max;
 };

@@ -165,6 +165,24 @@ class Tree{
         return lenLeft+lenRight;
     }
 
+    public levelOrderBottom(tree:TreeNode){
+        let list:number[][] = [];
+
+        this.levelOrderBottomTemp(list,0,tree);
+        return list;
+    }
+
+    private levelOrderBottomTemp(list,level,tree){
+        if(tree == void 0)return;
+
+        if(list.length-1 < level)list.push([]);
+
+        list[level].push(tree.val);
+
+        this.levelOrderBottomTemp(list,level+1,tree.left);
+        this.levelOrderBottomTemp(list,level+1,tree.right);
+    }
+
     public pathSum(tree:TreeNode,sum:number):number{
         if(tree == void 0 )return 0;
 
@@ -208,11 +226,10 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(1);
-tree.insert(2);
 tree.insert(3);
-tree.insert(4);
-tree.insert(5);
-tree.midOrder(tree.getRoot())
-var a = tree.diameterOfBinaryTree(tree.getRoot());
+tree.insert(9);
+tree.insert(20);
+tree.insert(15);
+tree.insert(7);
+var a = tree.levelOrderBottom(tree.getRoot());
 console.log(a)

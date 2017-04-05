@@ -10,7 +10,6 @@ var maxSubArray = function (nums) {
             sum = nums[i];
         if (sum > max)
             max = sum;
-        console.log(max);
     }
     return max;
 };
