@@ -140,6 +140,20 @@ var LinkList = (function () {
         fast.next = fast.next.next;
         return start;
     };
+    LinkList.prototype.mergeTwoLists = function (l1, l2) {
+        if (l1 == void 0)
+            return l2;
+        if (l2 == void 0)
+            return l1;
+        if (l1.value < l2.value) {
+            l1.next = this.mergeTwoLists(l1.next, l2);
+            return l1;
+        }
+        else {
+            l2.next = this.mergeTwoLists(l1, l2.next);
+            return l2;
+        }
+    };
     LinkList.prototype.getIntersectionNode = function (headA, headB) {
         if (headA == void 0 || headB == void 0)
             return null;
@@ -158,10 +172,15 @@ var LinkList = (function () {
     return LinkList;
 }());
 var link = new LinkList();
-link.append(1);
-link.append(2);
-link.append(3);
 link.append(4);
-var fck = link.reverse(link.getHead());
+link.append(8);
+link.append(32);
+link.append(77);
+var link2 = new LinkList();
+link2.append(9);
+link2.append(1);
+link2.append(5);
+link2.append(99);
+var fck = link.mergeTwoLists(link.getHead(), link2.getHead());
 console.log(link.getArrayData(fck));
 //# sourceMappingURL=LinkList.js.map
