@@ -5,7 +5,6 @@ var repeatedSubstringPattern = function (s) {
         return false;
     for (var len = s.length, i = ~~(len / 2); i >= 1; i--) {
         var child = s.slice(0, i);
-        console.log(i);
         if (len % i == 0) {
             var compareCount = len / i;
             var currentCount = 1;

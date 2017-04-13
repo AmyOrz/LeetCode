@@ -5,7 +5,6 @@ var repeatedSubstringPattern = function(s:string):boolean{
     for(let len = s.length,i = ~~(len/2);i >= 1;i--){
         let child = s.slice(0,i);
 
-        console.log(i)
         if(len % i == 0) {
             let compareCount = len / i;
             let currentCount = 1;
