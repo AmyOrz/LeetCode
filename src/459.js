@@ -3,10 +3,9 @@ var repeatedSubstringPattern = function (s) {
         return false;
     if (s.length > 10000)
         return false;
-    if (s.length % 2 != 0)
-        return false;
-    for (var len = s.length, i = len / 2; i >= 1; i--) {
+    for (var len = s.length, i = ~~(len / 2); i >= 1; i--) {
         var child = s.slice(0, i);
+        console.log(i);
         if (len % i == 0) {
             var compareCount = len / i;
             var currentCount = 1;
@@ -27,8 +26,8 @@ var repeatedSubstringPattern = function (s) {
     }
     return false;
 };
-var a = repeatedSubstringPattern("abcabcabcabc");
-var b = repeatedSubstringPattern("aba");
-console.log(a);
+// var a = repeatedSubstringPattern("abcabcabcabc");
+var b = repeatedSubstringPattern("aaaaaaa");
+// console.log(a)
 console.log(b);
 //# sourceMappingURL=459.js.map
