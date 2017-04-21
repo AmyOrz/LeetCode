@@ -22,5 +22,5 @@ var plusOne = function(digits:number[]) :number[]{
     }
     return digits;
 };
-var a = plusOne([9]);
+var a = plusOne([9,1,2,3,9]);
 console.log(a,[1,0])

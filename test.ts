@@ -10,3 +10,5 @@ function convert(i) {
 console.log(convert(22211))
 var a = "123";
 console.log(~~a)
+
+
