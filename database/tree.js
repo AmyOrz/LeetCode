@@ -160,6 +160,17 @@ var Tree = (function () {
         this.levelOrderBottomTemp(list, 0, tree);
         return list;
     };
+    Tree.prototype.lowestCommonAncestor = function (root, p, q) {
+        if (root.val > p.val && root.val > q.val) {
+            return this.lowestCommonAncestor(root.left, p, q);
+        }
+        else if (root.val < p.val && root.val < q.val) {
+            return this.lowestCommonAncestor(root.right, p, q);
+        }
+        else {
+            return root;
+        }
+    };
     Tree.prototype.levelOrderBottomTemp = function (list, level, tree) {
         if (tree == void 0)
             return;
