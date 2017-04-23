@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interview/slice.js" afterPath="$PROJECT_DIR$/interview/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gitPush.bash" afterPath="$PROJECT_DIR$/gitPush.bash" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slice.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="slice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interview/slice.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="387">
               <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitPush.bash" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gitPush.bash">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="85" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -99,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/405.ts" />
         <option value="$PROJECT_DIR$/src/405.js" />
         <option value="$PROJECT_DIR$/src/231.js" />
         <option value="$PROJECT_DIR$/src/231.ts" />
@@ -150,6 +159,7 @@
         <option value="$PROJECT_DIR$/interview/this.ts" />
         <option value="$PROJECT_DIR$/database/tree.ts" />
         <option value="$PROJECT_DIR$/interview/slice.js" />
+        <option value="$PROJECT_DIR$/gitPush.bash" />
       </list>
     </option>
   </component>
@@ -550,12 +560,12 @@
       <workItem from="1492481918934" duration="845000" />
       <workItem from="1492567670265" duration="2766000" />
       <workItem from="1492744484307" duration="7563000" />
-      <workItem from="1492941916148" duration="1863000" />
+      <workItem from="1492941916148" duration="2121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314464000" />
+    <option name="totallyTimeSpent" value="314722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -566,7 +576,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -639,7 +649,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ttt.js" />
     <entry file="file://$PROJECT_DIR$/FRP/Memoize.js" />
     <entry file="file://$PROJECT_DIR$/FRP/test.js" />
     <entry file="file://$PROJECT_DIR$/FRP/test.ts" />
@@ -920,6 +929,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitPush.bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="85" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
           <folding />
         </state>
       </provider>
