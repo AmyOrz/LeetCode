@@ -8,25 +8,4 @@
 <body>
 
 </body>
-<script>
-    var length = 100;
-    function getLen(){
-        console.log(this.length);
-    }
-    var obj = {
-        length:5,
-        method:function (fn) {
-            fn();
-            arguments[0]();
-        },
-        getLen2:function(){
-            function fck(){
-                console.log(this.length)
-            }
-            fck();
-        }
-    };
-    obj.method(getLen,2);
-
-</script>
 </html>
