@@ -146,6 +146,35 @@ var Tree = (function () {
         }
         return this._root;
     };
+    Tree.prototype.binaryTreePaths = function (tree) {
+        if (!tree)
+            return null;
+        var leftArr = [];
+        var rightArr = [];
+        var res = [];
+        this.binaryTree(tree.left, leftArr);
+        this.binaryTree(tree.right, rightArr);
+        var leftRes = tree.val;
+        for (var _i = 0, leftArr_1 = leftArr; _i < leftArr_1.length; _i++) {
+            var val = leftArr_1[_i];
+            leftRes += "->" + val;
+        }
+        var rightRes = tree.val;
+        for (var _a = 0, rightArr_1 = rightArr; _a < rightArr_1.length; _a++) {
+            var val = rightArr_1[_a];
+            rightRes += "->" + val;
+        }
+        res.push(leftRes);
+        res.push(rightRes);
+        return res;
+    };
+    Tree.prototype.binaryTree = function (tree, arr) {
+        if (!tree)
+            return;
+        arr.push(tree.val);
+        this.binaryTree(tree.left, arr);
+        this.binaryTree(tree.right, arr);
+    };
     Tree.prototype.diameterOfBinaryTree = function (tree) {
         if (!tree)
             return 0;
@@ -224,11 +253,11 @@ var Tree = (function () {
     return Tree;
 }());
 var tree = new Tree();
-tree.insert(3);
+tree.insert(11);
 tree.insert(9);
 tree.insert(20);
 tree.insert(15);
 tree.insert(7);
-var a = tree.levelOrderBottom(tree.getRoot());
+var a = tree.binaryTreePaths(tree.getRoot());
 console.log(a);
 //# sourceMappingURL=tree.js.map

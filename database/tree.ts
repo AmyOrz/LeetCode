@@ -156,6 +156,38 @@ class Tree{
         return this._root;
     }
 
+    public binaryTreePaths(tree:TreeNode):string[]{
+        if(!tree)return null;
+
+        var leftArr:number[] = [];
+        var rightArr:number[] = [];
+        var res:string[] = [];
+
+        this.binaryTree(tree.left,leftArr);
+        this.binaryTree(tree.right,rightArr);
+
+        var leftRes:string = tree.val;
+        for(var val of leftArr){
+            leftRes += "->"+val;
+        }
+
+        var rightRes:string = tree.val;
+        for(var val of rightArr){
+            rightRes += "->"+val;
+        }
+        res.push(leftRes);
+        res.push(rightRes);
+
+        return res;
+    }
+    private binaryTree(tree:TreeNode,arr:number[]){
+        if(!tree)return;
+        arr.push(tree.val);
+        this.binaryTree(tree.left,arr);
+        this.binaryTree(tree.right,arr);
+
+    }
+
     public diameterOfBinaryTree(tree:TreeNode):number{
         if(!tree)return 0;
         if(!tree.left && !tree.right)return 0;
@@ -235,10 +267,10 @@ class Tree{
     }
 }
 var tree = new Tree();
-tree.insert(3);
+tree.insert(11);
 tree.insert(9);
 tree.insert(20);
 tree.insert(15);
 tree.insert(7);
-var a = tree.levelOrderBottom(tree.getRoot());
+var a = tree.binaryTreePaths(tree.getRoot());
 console.log(a)
