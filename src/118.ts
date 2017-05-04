@@ -14,6 +14,7 @@ var generate = function(numRows:number):number[][]{
         res.push(temp);
     }
     console.log(res)
+    return res;
 
 };
-console.log(generate(5));
+generate(5);

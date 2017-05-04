@@ -13,7 +13,8 @@ var generate = function (numRows) {
         }
         res.push(temp);
     }
+    console.log(res);
     return res;
 };
-console.log(generate(5));
+generate(5);
 //# sourceMappingURL=118.js.map
