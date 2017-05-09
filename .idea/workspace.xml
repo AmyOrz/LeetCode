@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/434.ts" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Vector.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/closure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/closure.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/closure.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FRP/curry_test.js" afterPath="$PROJECT_DIR$/FRP/curry_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-    </list>
+    <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="" />
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,7 +39,7 @@
       <file leaf-file-name="curry_test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FRP/curry_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="342">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
@@ -523,12 +515,12 @@
       <workItem from="1493882972438" duration="9000" />
       <workItem from="1493883517592" duration="1210000" />
       <workItem from="1494214922227" duration="4380000" />
-      <workItem from="1494294572406" duration="7767000" />
+      <workItem from="1494294572406" duration="7768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347726000" />
+    <option name="totallyTimeSpent" value="347727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3221" y="24" width="1301" height="744" extended-state="6" />
@@ -938,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FRP/curry_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="342">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
