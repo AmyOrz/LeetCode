@@ -17,3 +17,11 @@ var sentence = map(words);
 
 var a = sentence(["hi man","what fck"]);
 console.log(a)
+
+
+var a = [1,2,3,4];
+var b = a.reduce(function(x,y){
+    return x + y;
+})
+
+console.log(b)
