@@ -16,10 +16,13 @@
   },
   "homepage": "https://github.com/AmyOrz/LeetCode#readme",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "rsvp": "^3.5.0",
+    "rxjs": "^5.4.0"
   },
   "devDependencies": {
-    "mori": "^0.3.2"
+    "mori": "^0.3.2",
+    "ramda": "^0.23.0"
   },
   "description": ""
 }
