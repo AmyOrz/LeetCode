@@ -1,6 +1,7 @@
 var rx = require("rxjs");
 /**
  * 可使用rx.of,fromArray,fromPromise,fromEvent创建可观察序列对象
+ * create 自定义可观察序列对象
  */
 var stream1 = rx.Observable.of(12,2);
 var stream2 = rx.Observable.of(16);

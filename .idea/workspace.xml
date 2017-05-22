@@ -5,34 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/rxjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/TailRec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Vector/operation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/compose.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/composeLoash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/composeRamda.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aaa.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/9.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FRP/Vector.js" afterPath="$PROJECT_DIR$/FRP/Vector/base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/LinkList.js" afterPath="$PROJECT_DIR$/src/database/LinkList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/LinkList.js.map" afterPath="$PROJECT_DIR$/src/database/LinkList.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/LinkList.ts" afterPath="$PROJECT_DIR$/src/database/LinkList.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/headpSort.js" afterPath="$PROJECT_DIR$/src/database/headpSort.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/headpSort.js.map" afterPath="$PROJECT_DIR$/src/database/headpSort.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/headpSort.ts" afterPath="$PROJECT_DIR$/src/database/headpSort.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/quickSort.js" afterPath="$PROJECT_DIR$/src/database/quickSort.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/quickSort.js.map" afterPath="$PROJECT_DIR$/src/database/quickSort.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/quickSort.ts" afterPath="$PROJECT_DIR$/src/database/quickSort.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/stack.js" afterPath="$PROJECT_DIR$/src/database/stack.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/stack.js.map" afterPath="$PROJECT_DIR$/src/database/stack.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/stack.ts" afterPath="$PROJECT_DIR$/src/database/stack.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/tree.js" afterPath="$PROJECT_DIR$/src/database/tree.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/tree.js.map" afterPath="$PROJECT_DIR$/src/database/tree.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/tree.ts" afterPath="$PROJECT_DIR$/src/database/tree.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/DataSource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/DataSource.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/DataSource.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/Observable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/Observable.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/Observable.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/safeData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/safeData.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/Observable/safeData.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/base/of.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Rx/Observable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Rx/Observable.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FRP/Rx/Observable.ts" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FRP/Rx/base.js" afterPath="$PROJECT_DIR$/FRP/Rx/base/base.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FRP/Rx/rxjs.js" afterPath="$PROJECT_DIR$/FRP/Rx/base/fromPromise.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,81 +43,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composeLoash.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/composeLoash.js">
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/base/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="54">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compose.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/compose.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composeRamda.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/composeRamda.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aaa.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aaa.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rxjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/rxjs.js">
+      <file leaf-file-name="of.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/base/of.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/base.js">
+      <file leaf-file-name="fromPromise.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/base/fromPromise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observable.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aaa.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aaa.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="216">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -158,12 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/551.js" />
-        <option value="$PROJECT_DIR$/src/551.ts" />
-        <option value="$PROJECT_DIR$/src/367.ts" />
-        <option value="$PROJECT_DIR$/src/66.js" />
-        <option value="$PROJECT_DIR$/src/66.ts" />
-        <option value="$PROJECT_DIR$/test.ts" />
         <option value="$PROJECT_DIR$/face.ts" />
         <option value="$PROJECT_DIR$/interview/newObj.ts" />
         <option value="$PROJECT_DIR$/interview/face.ts" />
@@ -206,9 +138,15 @@
         <option value="$PROJECT_DIR$/aaa.js" />
         <option value="$PROJECT_DIR$/aaa.ts" />
         <option value="$PROJECT_DIR$/FRP/rxjs.js" />
-        <option value="$PROJECT_DIR$/FRP/Rx/base.js" />
         <option value="$PROJECT_DIR$/FRP/Rx/observable.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/Observable.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/DataSource.ts" />
+        <option value="$PROJECT_DIR$/FRP/Rx/rxjs.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/base.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/safeData.ts" />
         <option value="$PROJECT_DIR$/FRP/Rx/Observable.ts" />
+        <option value="$PROJECT_DIR$/FRP/Rx/base/of.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/base/fromPromise.js" />
       </list>
     </option>
   </component>
@@ -220,9 +158,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -283,48 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LeetCode">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LeetCode">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LeetCode">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="database">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -390,6 +286,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="LeetCode">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="LeetCode">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="LeetCode">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="database">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -408,35 +368,35 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/FRP/curry_test.js" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/FRP/Rx" />
-      <recent name="$PROJECT_DIR$/FRP" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/FRP/Vector" />
-      <recent name="C:\Users\arvin\Documents\webStrom\LeetCode\database" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FRP/Rx/base" />
       <recent name="$PROJECT_DIR$/FRP" />
       <recent name="$PROJECT_DIR$/FRP/Vector" />
       <recent name="$PROJECT_DIR$/interview" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="C:\Users\arvin\Documents\webStrom\LeetCode\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FRP/Rx/base" />
+      <recent name="$PROJECT_DIR$/FRP/Rx/Observable" />
+      <recent name="$PROJECT_DIR$/FRP/Rx" />
+      <recent name="$PROJECT_DIR$/FRP" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.base.js">
-    <configuration default="false" name="compose.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/FRP/composeLoash.js" working-dir="$PROJECT_DIR$/FRP">
+  <component name="RunManager" selected="Node.js.rxjs.js">
+    <configuration default="false" name="rxjs.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/FRP/Rx/base/fromPromise.js" working-dir="$PROJECT_DIR$/FRP">
       <method />
     </configuration>
-    <configuration default="false" name="composeRamda.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="composeRamda.js" working-dir="$PROJECT_DIR$/FRP">
+    <configuration default="false" name="base.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/FRP/Rx/base/base.js" working-dir="$PROJECT_DIR$/FRP/Rx">
       <method />
     </configuration>
-    <configuration default="false" name="aaa.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="aaa.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="Observable.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/FRP/Rx/safeData.js" working-dir="$PROJECT_DIR$/FRP/Rx">
       <method />
     </configuration>
-    <configuration default="false" name="rxjs.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/FRP/Rx/rxjs.js" working-dir="$PROJECT_DIR$/FRP">
+    <configuration default="false" name="Observable.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Observable.js" working-dir="$PROJECT_DIR$/FRP/Rx">
       <method />
     </configuration>
-    <configuration default="false" name="base.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="base.js" working-dir="$PROJECT_DIR$/FRP/Rx">
+    <configuration default="false" name="of.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="of.js" working-dir="$PROJECT_DIR$/FRP/Rx/base">
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -504,19 +464,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.compose.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.composeRamda.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.aaa.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.rxjs.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.base.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.rxjs.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.base.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.Observable.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.Observable.js (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.of.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.base.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.rxjs.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.aaa.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.composeRamda.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.compose.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.rxjs.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.of.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.Observable.js (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.Observable.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.base.js" />
       </list>
     </recent_temporary>
   </component>
@@ -647,22 +607,33 @@
       <workItem from="1494575571979" duration="8574000" />
       <workItem from="1494924128245" duration="775000" />
       <workItem from="1495013624373" duration="5578000" />
+      <workItem from="1495164146139" duration="9119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370872000" />
+    <option name="totallyTimeSpent" value="379991000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0015479876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19796558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24767801" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24767801" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -683,7 +654,6 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -701,17 +671,17 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24767801" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24767801" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19796558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -735,36 +705,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/367.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="27" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/66.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face.js" />
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face.ts" />
-    <entry file="file://$PROJECT_DIR$/interview/newObj.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interview/this.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1028,23 +968,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/Rx/rxjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/Rx/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/Rx/observable.js">
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/observable.js" />
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/DataSource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1052,10 +977,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable.ts">
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/DataSource.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="274">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/safeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/safeData.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/Observable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1495420271801" expanded="true" signature="657:820" ph="{...}" />
+            <marker date="1495420271801" expanded="true" signature="657:816" ph="{...}" />
+            <marker date="1495420271801" expanded="true" signature="657:808" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/Observable/Observable.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/base/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/base/of.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/base/fromPromise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
