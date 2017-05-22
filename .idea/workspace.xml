@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9749eeac-92fb-427c-be68-944d0782bdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/base/interval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/base/timer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/buffer/buffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/buffer/bufferCount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/buffer/bufferTime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/take.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/map/concatMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/map/mapTo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/map/switchMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/repeat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/scan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/zip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/debounceTime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/first.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/last.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/skip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/takeLast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/takeUntil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FRP/Rx/operator/filter/throttleTime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FRP/Rx/base/base.js" afterPath="$PROJECT_DIR$/FRP/Rx/base/base.js" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,76 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/base/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/zip.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="repeat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/repeat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapTo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/map/mapTo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scan.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/scan.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buffer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/buffer/buffer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bufferCount.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/buffer/bufferCount.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="concatMap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/map/concatMap.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,11 +55,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="take.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="take.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/take.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="162">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="first.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/first.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="takeUntil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/takeUntil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skip.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/skip.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="takeLast.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/takeLast.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="last.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/last.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debounceTime.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/debounceTime.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="throttleTime.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/throttleTime.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,13 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/434.js" />
-        <option value="$PROJECT_DIR$/src/434.ts" />
-        <option value="$PROJECT_DIR$/src/257.ts" />
-        <option value="$PROJECT_DIR$/database/tree.js" />
-        <option value="$PROJECT_DIR$/database/tree.ts" />
-        <option value="$PROJECT_DIR$/leetcode.html" />
-        <option value="$PROJECT_DIR$/src/118.js" />
         <option value="$PROJECT_DIR$/src/118.ts" />
         <option value="$PROJECT_DIR$/src/441.ts" />
         <option value="$PROJECT_DIR$/src/441.js" />
@@ -215,6 +202,13 @@
         <option value="$PROJECT_DIR$/FRP/Rx/operator/map/concatMap.js" />
         <option value="$PROJECT_DIR$/FRP/Rx/operator/map/switchMap.js" />
         <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/take.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/first.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/takeUntil.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/skip.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/takeLast.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/last.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/debounceTime.js" />
+        <option value="$PROJECT_DIR$/FRP/Rx/operator/filter/throttleTime.js" />
       </list>
     </option>
   </component>
@@ -503,20 +497,20 @@
       <recent name="$PROJECT_DIR$/FRP/Rx/base" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.take.js">
-    <configuration default="false" name="bufferTime.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bufferTime.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/buffer">
+  <component name="RunManager" selected="Node.js.throttleTime.js">
+    <configuration default="false" name="skip.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="skip.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
       <method />
     </configuration>
-    <configuration default="false" name="bufferCount.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bufferCount.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/buffer">
+    <configuration default="false" name="takeLast.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="takeLast.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
       <method />
     </configuration>
-    <configuration default="false" name="concatMap.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="concatMap.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/map">
+    <configuration default="false" name="last.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="last.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
       <method />
     </configuration>
-    <configuration default="false" name="switchMap.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="switchMap.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/map">
+    <configuration default="false" name="debounceTime.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="debounceTime.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
       <method />
     </configuration>
-    <configuration default="false" name="take.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="take.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
+    <configuration default="false" name="throttleTime.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="throttleTime.js" working-dir="$PROJECT_DIR$/FRP/Rx/operator/filter">
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -584,19 +578,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.bufferTime.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.bufferCount.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.concatMap.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.switchMap.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.take.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.skip.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.takeLast.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.last.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.debounceTime.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.throttleTime.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.take.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.switchMap.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.concatMap.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.bufferCount.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.bufferTime.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.throttleTime.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.debounceTime.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.last.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.takeLast.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.skip.js" />
       </list>
     </recent_temporary>
   </component>
@@ -728,12 +722,12 @@
       <workItem from="1494924128245" duration="775000" />
       <workItem from="1495013624373" duration="5578000" />
       <workItem from="1495164146139" duration="15185000" />
-      <workItem from="1495431787600" duration="1360000" />
+      <workItem from="1495431787600" duration="2667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="387417000" />
+    <option name="totallyTimeSpent" value="388724000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,50 +820,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/257.ts" />
-    <entry file="file://$PROJECT_DIR$/src/database/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/tree.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="176" column="8" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/434.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/119.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/118.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/118.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/441.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1176,8 +1126,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/take.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="162">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/first.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/takeUntil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/skip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/takeLast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/last.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/debounceTime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRP/Rx/operator/filter/throttleTime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
