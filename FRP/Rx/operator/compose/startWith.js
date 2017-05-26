@@ -8,9 +8,3 @@ oper.subscribe(function (val) {
     console.log(val)
 })
 
-
-//stream1:  ---0---1---2|
-//stream2:  (45)|
-//stream3:  (9412)|
-//           concat
-//oper   :  ---0---1---2(459412)|
