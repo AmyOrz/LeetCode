@@ -120,6 +120,10 @@ var Tree = (function () {
             getData(tree.right);
         }
     };
+    Tree.prototype.hasPathSum = function (root, sum) {
+        if (root == void 0) {
+        }
+    };
     Tree.prototype.sortedArrayToBST = function (nums) {
         var len = nums.length;
         if (len == 1)

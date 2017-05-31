@@ -120,6 +120,12 @@ class Tree{
         }
     }
 
+    public hasPathSum(root:TreeNode,sum:number){
+        if(root == void 0){
+
+        }
+    }
+
     public sortedArrayToBST(nums:number[]):TreeNode{
         let len = nums.length;
 
