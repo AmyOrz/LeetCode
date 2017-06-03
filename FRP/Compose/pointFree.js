@@ -1,9 +1,5 @@
 var curry = require("lodash").curry;
-var compose = function (f,g) {
-    return function (x) {
-        return f(g(x));
-    }
-};
+var compose = require("ramda").compose;
 
 //非pointfree,因为提到了数据
 var snakeCase = function (word) {

@@ -1,8 +1,4 @@
-var compose = function (f,g) {
-    return function (x) {
-        return f(g(x));
-    }
-};
+var compose = require("ramda").compose;
 
 var upper = function (x) {
     return x.toUpperCase();

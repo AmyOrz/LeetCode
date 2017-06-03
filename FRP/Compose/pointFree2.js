@@ -1,15 +1,5 @@
 var curry = require("lodash").curry;
-var compose = function (f,g,z) {
-    if(z == void 0) {
-        return function (x) {
-            return f(g(x));
-        }
-    }else{
-        return function (x) {
-            return f(g(z(x)));
-        }
-    }
-};
+var compose = require("ramda").compose;
 
 var upper = function (x) {
     return x.toUpperCase();
