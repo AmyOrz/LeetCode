@@ -36,7 +36,7 @@ require([
 
         var mediaToImg = _.compose(img,mediaUrl);
 
-        var srcs = _.compose(_.map(mediaToImg),_.prop("items"));
+        var srcs = _.compose(_.map(mediaToImg),trace("after items"),_.prop("items"));
 
         var renderImg = _.compose(Impure.setHtml("body"),srcs);
 

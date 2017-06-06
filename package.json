@@ -16,9 +16,12 @@
   },
   "homepage": "https://github.com/AmyOrz/LeetCode#readme",
   "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ts": "^2.1.1",
     "lodash": "^4.17.4",
     "rsvp": "^3.5.0",
-    "rxjs": "^5.4.0"
+    "rxjs": "^5.4.0",
+    "wonder-lodash": "^0.1.3"
   },
   "devDependencies": {
     "mori": "^0.3.2",
