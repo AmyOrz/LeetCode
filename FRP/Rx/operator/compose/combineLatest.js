@@ -5,7 +5,10 @@ var stream1 = rx.Observable.interval(300).take(6);
 var stream2 = rx.Observable.interval(500).take(3);
 
 var oper = stream1.combineLatest(stream2,function (x,y) {
-    return x+y;
+    return {
+        x:x,
+        y:y
+    };
 });
 oper.subscribe(function (val) {
     console.log(val)
