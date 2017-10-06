@@ -1,4 +1,5 @@
 "use strict";
+exports.__esModule = true;
 var safeData_1 = require("./safeData");
 var DataSource_1 = require("./DataSource");
 var Observable = (function () {

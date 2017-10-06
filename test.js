@@ -6,4 +6,11 @@ function convert(i) {
     }).reverse().join('').replace(/(零.)+/g, '零').replace(/^零|零+$/, '').replace(/二(?=[万千])/g, '两').replace(/^一十/g, '十');
 }
 console.log(convert(22211));
+unit.forEach(function (item) {
+    var a = null;
+    if (item == "十") {
+        a = item;
+    }
+    console.log(item);
+});
 //# sourceMappingURL=test.js.map

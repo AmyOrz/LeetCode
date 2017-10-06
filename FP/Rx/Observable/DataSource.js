@@ -1,4 +1,5 @@
 "use strict";
+exports.__esModule = true;
 var DataSource = (function () {
     function DataSource() {
         var _this = this;

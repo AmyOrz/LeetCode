@@ -1,4 +1,5 @@
 "use strict";
+exports.__esModule = true;
 exports.ADD = "ADD";
 exports.COMPLETE = "COMPLETE";
 exports.FILTER = "FILTER";

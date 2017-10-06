@@ -10,3 +10,12 @@ function convert(i) {
 console.log(convert(22211))
 
 
+unit.forEach(item =>{
+    var a = null;
+    if(item == "十"){
+        a = item;
+    }
+    console.log(item)
+});
+
+

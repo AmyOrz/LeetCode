@@ -7,7 +7,10 @@ var explan = function (x) {
     return x + "!!"
 };
 
-var angry = compose(upper,explan);
+var angry = compose(
+    upper,
+    explan
+);
 var res = angry("what fck is hehe");
 console.log(res)
 

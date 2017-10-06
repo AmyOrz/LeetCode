@@ -1,4 +1,5 @@
 "use strict";
+exports.__esModule = true;
 var safeData = (function () {
     function safeData(observer) {
         this._isUnsubscribed = false;
