@@ -1,7 +1,6 @@
 /* config-overrides.js */
 const path = require('path')
 const paths = require('react-scripts/config/paths')
-const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin')
 
 const {
   override,
@@ -9,8 +8,6 @@ const {
   addBabelPlugin,
   addWebpackPlugin,
 } = require('customize-cra')
-const { getThemeVariables } = require('antd/dist/theme')
-const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const REACT_APP_ENV = process.env.REACT_APP_ENV
 //  env 是 process.env.NODE_ENV  react-app-rewired build 时  env==='production'
 let cdnPublicPath = ''
@@ -57,11 +54,11 @@ const alter_config = () => (config, env) => {
           options: {
             lessOptions: {
               // 如果使用less-loader@5，请移除 lessOptions 这一级直接配置选项。
-              modifyVars: getThemeVariables({
-                dark: false, // 开启暗黑模式
-                compact: false, // 开启紧凑模式
-              }),
-              javascriptEnabled: true,
+              // modifyVars: getThemeVariables({
+              //   dark: false, // 开启暗黑模式
+              //   compact: false, // 开启紧凑模式
+              // }),
+              // javascriptEnabled: true,
             },
           },
         },
@@ -74,18 +71,11 @@ const alter_config = () => (config, env) => {
 
 module.exports = override(
   addBabelPlugin(['@babel/plugin-proposal-decorators', { legacy: true }]),
-  addWebpackPlugin(new AntdDayjsWebpackPlugin()),
   addWebpackAlias({
     //增加路径别名的处理
     '@': path.resolve(__dirname, './src'),
     '@assets': path.resolve(__dirname, './src/assets'),
   }),
   alter_config(),
-  path_config(),
-  addWebpackPlugin(
-    new MonacoWebpackPlugin({
-      languages: ['json','javascript'],
-      features: ['snippets', 'suggest'],
-    }),
-  )
+  path_config()
 )
