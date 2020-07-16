@@ -149,7 +149,6 @@ describe('leet code', () => {
           break
         }
       }
-      console.log(firstArr, secondArr)
 
       for (let index = 0; index < nums.length - 1; index++) {
         if (firstArr[index] > firstArr[index + 1]) {
@@ -169,5 +168,30 @@ describe('leet code', () => {
     expect(testFunc([3, 4, 2, 3])).toEqual(false)
     expect(testFunc([-1, 4, 2, 3])).toEqual(true)
     expect(testFunc([1, 2, 4, 1])).toEqual(true)
+  })
+
+  test('523', () => {
+    var testFunc = function (nums: number[], k: number) {
+      let sumArray = [nums[0]]
+
+      for (let index = 1; index < nums.length; index++) {
+        sumArray[index] = sumArray[index - 1] + nums[index]
+      }
+
+      for (let start = 0; start < nums.length; start++) {
+        for (let end = start + 1; end < nums.length; end++) {
+          let temp = sumArray[end] - sumArray[start] + nums[start]
+          if (temp == k || (k != 0 && temp % k == 0)) {
+            return true
+          }
+        }
+      }
+
+      return false
+    }
+
+    expect(testFunc([23, 2, 4, 6, 7], 6)).toEqual(true)
+    expect(testFunc([23, 2, 6, 4, 7], 6)).toEqual(true)
+    expect(testFunc([0, 0], 0)).toEqual(true)
   })
 })
