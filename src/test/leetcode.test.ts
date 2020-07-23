@@ -281,5 +281,4 @@ describe('leet code', () => {
 
     expect(testFunc([1, 12, -5, -6, 50, 3], 4)).toEqual(12.75)
   })
-
 })
