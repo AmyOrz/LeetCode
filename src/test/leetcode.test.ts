@@ -86,8 +86,8 @@ describe('leet code', () => {
       let array = []
       let result = 0
 
-      for (let index = 0; index < n; index++) {
-        array.push(start + index * 2)
+      for (let i = 0; i < n; i++) {
+        array.push(start + i * 2)
       }
       return array.reduce((result, item) => {
         return item ^ result
@@ -141,20 +141,20 @@ describe('leet code', () => {
       let firstResult = true
       let secondResult = true
 
-      for (let index = 0; index < nums.length - 1; index++) {
-        if (nums[index] > nums[index + 1]) {
-          firstArr[index] = firstArr[index + 1]
-          secondArr[index + 1] = secondArr[index]
+      for (let i = 0; i < nums.length - 1; i++) {
+        if (nums[i] > nums[i + 1]) {
+          firstArr[i] = firstArr[i + 1]
+          secondArr[i + 1] = secondArr[i]
 
           break
         }
       }
 
-      for (let index = 0; index < nums.length - 1; index++) {
-        if (firstArr[index] > firstArr[index + 1]) {
+      for (let i = 0; i < nums.length - 1; i++) {
+        if (firstArr[i] > firstArr[i + 1]) {
           firstResult = false
         }
-        if (secondArr[index] > secondArr[index + 1]) {
+        if (secondArr[i] > secondArr[i + 1]) {
           secondResult = false
         }
       }
@@ -174,8 +174,8 @@ describe('leet code', () => {
     var testFunc = function (nums: number[], k: number) {
       let sumArray = [nums[0]]
 
-      for (let index = 1; index < nums.length; index++) {
-        sumArray[index] = sumArray[index - 1] + nums[index]
+      for (let i = 1; i < nums.length; i++) {
+        sumArray[i] = sumArray[i - 1] + nums[i]
       }
 
       for (let start = 0; start < nums.length; start++) {
@@ -193,5 +193,92 @@ describe('leet code', () => {
     expect(testFunc([23, 2, 4, 6, 7], 6)).toEqual(true)
     expect(testFunc([23, 2, 6, 4, 7], 6)).toEqual(true)
     expect(testFunc([0, 0], 0)).toEqual(true)
+  })
+
+  test('859', () => {
+    var testFunc = function (a: string, b: string): boolean {
+      if (a.length != b.length) return false
+      if (a == b && new Set(a).size < a.length) return true
+
+      let result = []
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] != b[i]) {
+          if (result.length > 2) return false
+
+          result.push([a[i], b[i]])
+        }
+      }
+
+      console.log(result)
+      return (
+        result.length == 2 && result[0].join('') == result[1].reverse().join('')
+      )
+    }
+
+    expect(testFunc('ab', 'ba')).toEqual(true)
+    expect(testFunc('aaaaaaabc', 'aaaaaaacb')).toEqual(true)
+    expect(testFunc('ab', 'ab')).toEqual(false)
+    expect(testFunc('aa', 'aa')).toEqual(true)
+  })
+
+  test('941', () => {
+    var testFunc = function (nums: number[]) {
+      if (nums.length < 3) return false
+      let isIncrease = true
+      for (let i = 1; i < nums.length - 1; i++) {
+        if (isIncrease) {
+          if (nums[i] < nums[i - 1] || nums[i] == nums[i + 1]) return false
+          if (nums[i] >= nums[i + 1]) {
+            isIncrease = false
+          }
+        } else {
+          if (nums[i] < nums[i + 1] || nums[i] == nums[i + 1]) return false
+        }
+      }
+
+      if (isIncrease) return false
+      return true
+    }
+
+    expect(testFunc([3, 5, 5])).toEqual(false)
+    expect(testFunc([3, 0, 5, 2, 1])).toEqual(false)
+    expect(testFunc([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])).toEqual(false)
+    expect(testFunc([14, 82, 89, 84, 79, 70, 70, 68, 3])).toEqual(false)
+  })
+
+  test('924', () => {
+    var testFunc = function (nums: number[]) {
+      let result = nums.reduce((result: number[], item: number, i: number) => {
+        if (result.length == 0) {
+          result.push(item)
+        } else {
+          result.push(result[i - 1] + item)
+        }
+        return result
+      }, [])
+
+      console.log(result)
+      let max = result.length - 1
+      for (let j = 0; j <= max; j++) {
+        console.log(result[max], result[j])
+        let target = j == 0 ? 0 : result[j - 1]
+        if (result[max] - result[j] == target) {
+          return j
+        }
+      }
+      return -1
+    }
+
+    expect(testFunc([1, 7, 3, 6, 5, 6])).toEqual(3)
+    expect(testFunc([-1, -1, -1, -1, -1, -1])).toEqual(-1)
+    expect(testFunc([-1, -1, -1, 0, 1, 1])).toEqual(0)
+    expect(testFunc([-1, -1, 0, 1, 0, -1])).toEqual(4)
+    expect(testFunc([-1, -1, 0, 1, 1, 0])).toEqual(5)
+  })
+
+  test('643', () => {
+    var testFunc = function (nums: number[], n: number) {}
+
+    expect(testFunc([1, 12, -5, -6, 50, 3], 4)).toEqual(12.75)
   })
 })
