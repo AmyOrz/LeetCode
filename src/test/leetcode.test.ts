@@ -257,10 +257,8 @@ describe('leet code', () => {
         return result
       }, [])
 
-      console.log(result)
       let max = result.length - 1
       for (let j = 0; j <= max; j++) {
-        console.log(result[max], result[j])
         let target = j == 0 ? 0 : result[j - 1]
         if (result[max] - result[j] == target) {
           return j
@@ -277,8 +275,32 @@ describe('leet code', () => {
   })
 
   test('643', () => {
-    var testFunc = function (nums: number[], n: number) {}
+    var testFunc = function (nums: number[], n: number) {
+      let length = nums.length - n
+      let result = [] as any
 
-    expect(testFunc([1, 12, -5, -6, 50, 3], 4)).toEqual(12.75)
+      if (length >= nums.length) result = nums
+
+      for (let i = 0; i <= length; i++) {
+        let k = 0
+        let count = 0
+
+        while (k < n) {
+          count += nums[i + k]
+          k++
+        }
+        result.push(count)
+      }
+      let a = result.reduce((result: number, item: number) => {
+        if (result < item) {
+          result = item
+        }
+        return result
+      }, -Number.MAX_VALUE)
+      return a / n
+    }
+
+    // expect(testFunc([1, 12, -5, -6, 50, 3], 4)).toEqual(12.75)
+    expect(testFunc([-1], 1)).toEqual(-1)
   })
 })
