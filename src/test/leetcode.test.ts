@@ -281,6 +281,8 @@ describe('leet code', () => {
 
       if (length >= nums.length) result = nums
 
+      console.log(result)
+
       for (let i = 0; i <= length; i++) {
         let k = 0
         let count = 0
@@ -302,5 +304,29 @@ describe('leet code', () => {
 
     // expect(testFunc([1, 12, -5, -6, 50, 3], 4)).toEqual(12.75)
     expect(testFunc([-1], 1)).toEqual(-1)
+  })
+
+  test('747', () => {
+    var testFunc = function (nums: number[]) {
+      if (nums.length < 2) return 0
+      let temp = [...nums]
+      let a = temp.sort((a, b) => a - b).reverse()
+      if (a[0] >= a[1] * 2) return nums.indexOf(a[0])
+      else return -1
+    }
+    // expect(testFunc([3, 6, 1, 0])).toEqual(1)
+    expect(testFunc([1, 2, 16, 35, 44, 100, 27, 0])).toEqual(5)
+  })
+
+  test('offer10-1', () => {
+    var testFunc = function (n: number): any {
+      if (n == 0) return 0
+      if (n == 1) return 1
+
+      return testFunc(n - 1) + testFunc(n - 2)
+    }
+
+    // expect(testFunc(5)).toEqual(5)
+    expect(testFunc(10)).toEqual(55)
   })
 })
