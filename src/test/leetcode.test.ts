@@ -326,7 +326,38 @@ describe('leet code', () => {
       return testFunc(n - 1) + testFunc(n - 2)
     }
 
-    // expect(testFunc(5)).toEqual(5)
+    expect(testFunc(5)).toEqual(5)
     expect(testFunc(10)).toEqual(55)
+  })
+
+  test('58', () => {
+    var testFunc = function (s: string) {
+      if (s == void 0 || s == '') return 0
+
+      let result = 0
+      let len = s.length
+      for (let index = len - 1; index >= 0; index--) {
+        let item = s[index]
+
+        console.log(item)
+        if (item == ' ') {
+          if (result == 0) continue
+          else break
+        } else {
+          result++
+        }
+      }
+
+      console.log(result)
+      return result
+    }
+
+    expect(testFunc('Hello World')).toEqual(5)
+    expect(testFunc('a')).toEqual(1)
+  })
+
+  test('7',() => {
+    var testFunc = function (nums: number[], n: number) {}
+    expect(testFunc()).toEqual()
   })
 })
