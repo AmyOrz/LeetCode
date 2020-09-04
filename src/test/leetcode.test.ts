@@ -356,8 +356,8 @@ describe('leet code', () => {
     expect(testFunc('a')).toEqual(1)
   })
 
-  test('7',() => {
-    var testFunc = function (nums: number[], n: number) {}
-    expect(testFunc()).toEqual()
-  })
+  // test('7',() => {
+  //   var testFunc = function (nums: number[], n: number) {}
+  //   expect(testFunc()).toEqual()
+  // })
 })
