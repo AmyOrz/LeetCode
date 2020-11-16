@@ -47,5 +47,5 @@ function fck1() {
     this.hehe = 213;
 }
 fck1();
-console.log(this.hehe); //213
+console.log(this); //213
 //# sourceMappingURL=this.js.map
