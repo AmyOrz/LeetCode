@@ -1,3 +1,4 @@
+// ---------- 实现find函数
 let find = function (data) {
   this.data = data
 
@@ -32,11 +33,34 @@ let data = [
   { userId: '1a', title: 'yh5' },
 ]
 
-console.log(
-  find(data)
-    .where({
-      title: /\d$/,
-      userId: /^\d+$/,
-    })
-    .orderBy('userId', 'asc')
-)
+// console.log(
+//   find(data)
+//     .where({
+//       title: /\d$/,
+//       userId: /^\d+$/,
+//     })
+//     .orderBy('userId', 'asc')
+// )
+
+// --------- 实现curry函数
+
+let curry = (fn, ...args) => {
+  if (args.length >= fn.length) {
+    return fn(...args)
+  }
+
+  return (...newArgs) => {
+    return curry(fn, ...args, ...newArgs)
+  }
+}
+
+let add = (a, b, c, d) => {
+  return a + b + c + d
+}
+
+let sum = curry(add)
+
+// console.log('fck:', sum(1, 2, 3, 4))
+// console.log(sum(1)(2, 3, 4))
+// console.log(sum(1, 2)(3, 4))
+// console.log(sum(1, 2, 3)(4))
