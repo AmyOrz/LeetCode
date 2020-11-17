@@ -64,3 +64,6 @@ let sum = curry(add)
 // console.log(sum(1)(2, 3, 4))
 // console.log(sum(1, 2)(3, 4))
 // console.log(sum(1, 2, 3)(4))
+
+
+// ---------
