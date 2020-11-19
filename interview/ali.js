@@ -65,5 +65,25 @@ let sum = curry(add)
 // console.log(sum(1, 2)(3, 4))
 // console.log(sum(1, 2, 3)(4))
 
+// --------- 实现_.get 方法，获取如 a.b.c.d.e
 
-// ---------
+function get(target, path, defaultValue = undefined) {
+  if (target == void 0) return defaultValue
+
+  let pathArray = path.replace(/\[(\w+)\]/g, '.$1').split('.')
+
+  let result = target
+  for (let o of pathArray) {
+    result = result[o]
+    if (result == void 0) {
+      return defaultValue
+    }
+  }
+
+  return result
+}
+
+// console.log(get({ a: null }, 'a.b.c', 3)) // output: 3
+// console.log(get({ a: 2 }, 'a', 3)) // output: 2
+// console.log(get({ a: { b: 1 } }, 'a.b', 3)) // output: 1
+// console.log(get({ a: [{ b: [{ c: 1 }] }] }, 'a[0].b[0].c', 3)) // output: 1
