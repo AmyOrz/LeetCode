@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>LeetCode test</title>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-</head>
-<body>
-    <div id = "app">
-        <ul>
-            <todo-list v-for = "i in array" :fck = "i"></todo-list>
-        </ul>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <!-- <todo-list v-for="i in array" :fck="i"></todo-list> -->
+        <li v-for="i in array">{{i.text}} -- hehe</li>
+      </ul>
     </div>
-</body>
-<script>
-    Vue.component("todo-list",{
-        props:["fck"],
-        template:"<li>{{fck.text}}<span>{{fck.text+'hehe'}}</span></li>"
-    });
+  </body>
+  <script>
+    Vue.component('todo-list', {
+      props: ['fck'],
+      template: "<li>{{fck.text}} ---- <span>{{fck.text+'hehe'}}</span></li>",
+    })
 
     var app = new Vue({
-        el:"#app",
-        data:{
-            array:[
-                {text:"fcssk"},
-                {text:"this"},
-                {text:"hehe"},
-            ],
-            fck:123
-        }
+      el: '#app',
+      data: {
+        array: [{ text: 'fcssk' }, { text: 'this' }, { text: 'hehe' }],
+      },
+    })
 
-    });
+    console.log(app)
+    app.fck = 'asd'
+    app.$watch('fck', function (newVal, oldVal) {
+      console.log(newVal)
+      console.log(oldVal)
+    })
 
-    console.log(app);
-    app.fck = "asd"
-    app.$watch("fck",function (newVal,oldVal) {
-        console.log(newVal)
-        console.log(oldVal)
-    });
-
-    var a = [0,1,2,3,4,5].splice(2,2);
+    var a = [0, 1, 2, 3, 4, 5].splice(2, 2)
     console.log(a)
-</script>
+  </script>
 </html>
